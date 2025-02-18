@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+@custom-variant default-hover (&:hover);
 
 @theme {
    
@@ -56,3 +57,35 @@
         opacity: 1;
       }
     }
+
+
+    .download-button {
+      width: 239px;
+      height: 65px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      cursor: pointer;
+      border-radius: 999px;
+      padding: 22px 32px; /* 22px top/bottom, 32px left/right */
+      background-color: #10E0D7;
+      transition: background-color 1s, transform 1s;
+    }
+ 
+    
+    /* Set up initial transitions for children */
+    .download-icon,
+    .download-text {
+      transition: transform 0.6s;
+    }
+    
+    /* On hover, move the icon to the right and text to the left */
+    .download-button:hover .download-icon {
+      transform: translateX(140px);
+    }
+    
+    .download-button:hover .download-text {
+      transform: translateX(-20px);
+    }
+    

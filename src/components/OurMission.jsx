@@ -6,7 +6,7 @@ function OurMission() {
             <div className=' flex flex-col space-y-3'>
                 <p className='font-bold text-[46px] leading-[46px] tracking-[2%]'>Our mission </p>
                 <p className='font-normal text-[18px] leading-[26px] tracking-[0%]'>Combining cutting-edge technology with user-friendly design, we assist you at every step of your journey. </p>
-                <button className='w-[146px] h-[48px] gap-[8px] rounded-full bg-black text-white mt-5'>Learn more</button></div>
+                <button className='w-[146px] h-[48px] gap-[8px] rounded-full bg-black text-[#10E0D7] mt-5 default-hover:bg-[#94F2ED] default-hover:text-black transition-all duration-700'>Learn more</button></div>
             <div className='min-w-[410px] min-h-[293px]'><img className='w-full' src="map.svg" alt="" /></div>
             <div>
                 <p className='font-bold text-[24px] leading-[35px] tracking-[2%]'>not only indoor navigator</p>
