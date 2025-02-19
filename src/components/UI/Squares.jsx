@@ -1,6 +1,6 @@
 import React from "react";
 
-const Squares = ({ squareSize = 24, borderColor = "#fff", bgColor = "#071010" }) => {
+const Squares = ({ squareSize, borderColor , bgColor  }) => {
   return (
     <div
       className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10"

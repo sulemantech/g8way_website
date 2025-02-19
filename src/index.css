@@ -89,3 +89,11 @@
       transform: translateX(-20px);
     }
     
+    .my-shadow {
+      box-shadow: 
+        inset 0px 0px 0px 0px #FFFFFF80,
+        0px -2px 40px 0px #10E0D726,
+        0px -2px 10px 0px #E8FFFE4D;
+    }
+    
+    

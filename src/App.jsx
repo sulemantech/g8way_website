@@ -4,6 +4,8 @@ import Home from './components/Home'
 import OurMission from './components/OurMission'
 import TrustedComp from './components/TrustedComp'
 import LottieAnimationComponent from './components/LottieAnimationComponent'
+import Features from './components/Features'
+import About from './components/About'
 
 function App() {
 
@@ -13,6 +15,8 @@ function App() {
     <OurMission/>
     <TrustedComp/>
     <LottieAnimationComponent/>
+    <Features/>
+    <About/>
     </>
   )
 }
