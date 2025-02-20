@@ -8,8 +8,8 @@ function Header() {
   const navItems = [
     { id: 'home', label: 'Home', containerWidth: 75 },
     { id: 'features', label: 'Features', containerWidth: 95 },
-    { id: 'contact', label: 'Contact', containerWidth: 97 },
     { id: 'about-us', label: 'About Us', containerWidth: 89 },
+    { id: 'contact', label: 'Contact', containerWidth: 97 },
   ];
 
   return (

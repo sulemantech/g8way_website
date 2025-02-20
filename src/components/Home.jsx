@@ -13,7 +13,8 @@ function Home() {
                 squareSize={90}
                 borderColor="#0c1f1f"
                 bgColor='#071010'
-                className="absolute inset-0 -z-10 opacity-50"
+                opacity={"opacity-70"}
+                className="absolute inset-0 -z-10"
             />
 
             {/* Foreground components */}

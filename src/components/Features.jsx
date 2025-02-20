@@ -4,7 +4,7 @@ import Squares from './UI/Squares'
 function Features() {
     return (
         <div className='pt-14 bg-black'>
-            <p className='font-bold font-roboto text-[46px] text-white leading-[46px] tracking-[2%] text-center uppercase'><span className='text-[#10E0D7]'>5 features</span> to transform <br /> your <span className='text-[#10E0D7]'>airport experience</span></p>
+            <p className='font-bold font-roboto text-[46px] text-white leading-[46px] tracking-[2%] text-center uppercase'><span className='text-[#10E0D7]'>5 features</span> to transform <br /> your airport <span className='text-[#10E0D7]'> experience</span></p>
             <MobileWithText
                 text={["navigationIcon.svg",
                     "Indoor navigation system",
@@ -55,7 +55,7 @@ function MobileWithText({ text, screen, flexStyle, FloatingMobile }) {
                 <div className='max-w-[363px] max-h-[321px] flex flex-col'>
                     <img className='w-[40px] aspect-square mb-8' src={text[0]} alt="Icon" />
                     <p className='font-bold text-[24px] leading-[32px] tracking-[2%] uppercase mb-4'>{text[1]}</p>
-                    <p className='font-normal text-[18px] leading-[26px] tracking-[0%] uppercase'>{text[2]}</p>
+                    <p className='font-normal text-[18px] leading-[26px] tracking-[0%] text-[#F0F0F0] opacity-90'>{text[2]}</p>
                 </div>
                 <p className='font-normal text-[16px] leading-[24px] tracking-[0%] uppercase absolute bottom-6 left-8'>
                     {text[3]}

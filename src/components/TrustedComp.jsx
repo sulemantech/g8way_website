@@ -13,8 +13,8 @@ function TrustedComp() {
         <TrustedCompCard Image={"Securitychack.svg"} Text={"Get seamless Check-In and Security Control"} />
         <TrustedCompCard Image={"flightticket.svg"} Text={"Information about the next connecting flight"} />
       </div>
-      <p className='font-semibold text-[21px] leading-[29px] tracking-[0.23px] text-center text-[#86868B] uppercase'>Whether you’re finding your way to the gate, checking real-time flight <br /> updates, or seeking personalized recommendations for shops and lounges,<br /> G8WAY is your trusted companion.</p>
-      <div>
+      <p className='font-semibold text-[21px] leading-[29px] tracking-[0.23px] text-center text-[#86868B] '>Whether you’re finding your way to the gate, checking real-time flight <br /> updates, or seeking personalized recommendations for shops and lounges,<br /> G8WAY is your trusted companion.</p>
+      <div className='-mt-14'>
       <DownloadTheApp/>
       </div>
     </div>
