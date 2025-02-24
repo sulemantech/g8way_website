@@ -4,7 +4,8 @@ import DownloadTheApp from './UI/DownloadTheApp'
 
 function TrustedComp() {
   return (
-    <div className='bg-black flex flex-col items-center justify-around font-roboto min-h-[763px]'>
+    <div className='bg-black  font-roboto flex flex-col items-center justify-center min-h-[763px]'>
+      <div className='flex flex-col items-center justify-between min-h-[603px] py-6'>
       <p className="text-white font-bold text-[46px] leading-[46px] tracking-[2%] text-center uppercase">G8WAY is your <br /> <span className='text-[#10E0D7]'>trusted companion</span></p>
       <div className='flex space-x-6'>
         <TrustedCompCard Image={"FindYourWay.svg"} Text={"Find your way to the gate with ease"} />
@@ -14,8 +15,9 @@ function TrustedComp() {
         <TrustedCompCard Image={"flightticket.svg"} Text={"Information about the next connecting flight"} />
       </div>
       <p className='font-semibold text-[21px] leading-[29px] tracking-[0.23px] text-center text-[#86868B] '>Whether you’re finding your way to the gate, checking real-time flight <br /> updates, or seeking personalized recommendations for shops and lounges,<br /> G8WAY is your trusted companion.</p>
-      <div className='-mt-14'>
+      <div className=''>
       <DownloadTheApp/>
+      </div>
       </div>
     </div>
   )

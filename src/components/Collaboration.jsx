@@ -38,17 +38,17 @@ function Collaboration() {
 
             </div>
             <div className='h-[844px] font-roboto flex items-center justify-center space-x-6 bg-black'>
-                <div className='w-[632px] h-[684px] flex flex-col space-y-3 items-center justify-center rounded-2xl border border-[#86868B33] bg-linear-to-b from-[#FFFFFF0D] to-[#FFFFFF00]'>
+                <div className='w-[632px] h-[684px] relative flex flex-col space-y-3 items-center justify-center rounded-2xl border border-[#86868B33] bg-linear-to-b from-[#FFFFFF0D] to-[#FFFFFF00]'>
                     <p className="font-bold text-white text-[35px] w-[552px] text-left leading-[35px] tracking-[2%] mb-3 uppercase ">
                         <span className='text-[#10E0D7]'> Discover </span>  seamless <br /> airport navigation <span className='text-[#10E0D7]'> today </span>
                     </p>
                     <p className={`font-normal w-[552px] text-left opacity-90 mb-5 text-white text-[18px] leading-[26px] tracking-[0]`}>
                         Ready to enhance your travel experience? Download the G8WAY app now and explore effortless airport navigation, real-time flight updates, and personalized recommendations. Your journey just got smarter.
                     </p>
-                    <div className='w-[552px]'>
+                    <div className='w-[552px] mt-7'>
                         <DownloadTheApp/>
                     </div>
-                    <div className='w-[552px] flex justify-end'>
+                    <div className='absolute bottom-5 right-8'>
                         <img src="QrcodeG8.svg" alt="" />
                     </div>
                 </div>

@@ -13,7 +13,7 @@ function LottieAnimationComponent() {
     };
 
     return (
-        <div className='h-[619px] bg-black flex justify-between items-end w-full px-10 font-roboto pb-3'>
+        <div className='h-[619px] bg-black flex justify-between items-end w-full px-[72px] font-roboto py-20'>
             <div className='w-[606px] h-[459px] rounded-3xl overflow-hidden'>
                 <Lottie
                     options={defaultOptions}

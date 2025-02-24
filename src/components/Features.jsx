@@ -3,7 +3,7 @@ import Squares from './UI/Squares'
 
 function Features() {
     return (
-        <div className='pt-14 bg-black'>
+        <div className='pt-14 bg-black w-[1296px] mx-auto'>
             <p className='font-bold font-roboto text-[46px] text-white leading-[46px] tracking-[2%] text-center uppercase'><span className='text-[#10E0D7]'>5 features</span> to transform <br /> your airport <span className='text-[#10E0D7]'> experience</span></p>
             <MobileWithText
                 text={["navigationIcon.svg",
@@ -18,7 +18,7 @@ function Features() {
                     "2/5"]}
                 screen="secmobile.svg"
                 flexStyle={"flex-row-reverse"}
-                FloatingMobile={"float-end mr-10"}
+                FloatingMobile={"float-end mr-20"}
             />
             <MobileWithText
                 text={["thirdico.svg",
@@ -32,7 +32,7 @@ function Features() {
                     "Your experience, your preferences! G8WAY adapts to your profile, suggesting shops, restaurants, and services that match your interests. Based on your travel history and preferences, the app provides tailored recommendations to enhance your airport experience.", "4/5"]}
                 screen="fourthmobile.svg"
                 flexStyle={"flex-row-reverse"}
-                FloatingMobile={"float-end mr-10"}
+                FloatingMobile={"float-end mr-20"}
             />
             <MobileWithText
                 text={["fifthico.svg",
@@ -49,7 +49,7 @@ export default Features
 
 function MobileWithText({ text, screen, flexStyle, FloatingMobile }) {
     return (
-        <div className={`min-h-[960px] flex  ${flexStyle} space-x-10 text-white mx-[3%] items-center justify-between`}>
+        <div className={`min-h-[960px] flex  ${flexStyle} space-x-20 text-white mx-[3%] items-center justify-between`}>
             {/* Left Card */}
             <div className='h-[522px] relative min-w-[411px] border border-[#86868B33] rounded-2xl p-6 bg-linear-to-b from-[#FFFFFF0D] to-[#FFFFFF00]'>
                 <div className='max-w-[363px] max-h-[321px] flex flex-col'>

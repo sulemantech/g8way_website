@@ -3,7 +3,7 @@ import CountUp from './CountUp'
 
 function PerformanceOverview() {
   return (
-    <div className='flex flex-col items-center justify-center'>
+    <div className='flex flex-col items-center justify-center h-[874px]'>
       <p className='font-roboto text-white font-bold text-[46px] leading-[46px] tracking-[2%] text-center uppercase'><span className='text-[#10E0D7]'> G8WAY </span> Performance <span className='text-[#10E0D7]'> Overview </span>  </p>
       <StatsCard
         widthClass="w-[854px]"

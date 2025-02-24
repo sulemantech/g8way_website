@@ -1,99 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 @custom-variant default-hover (&:hover);
 
 @theme {
-   
-    --font-roboto: "Roboto", sans-serif; 
-      
-    
-  }
+  --font-roboto: "Roboto", sans-serif;
+}
 
 /* 
   *{
     border:2px solid red
   } */
 
- .slideUp {
-    animation: slideUp 0.5s ease-out forwards;
+.slideUp {
+  animation: slideUp 0.5s ease-out forwards;
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
   }
-  @keyframes slideUp {
-      0% {
-        transform: translateY(100%);
-        opacity: 0;
-      }
-      100% {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-
-
- .slideUp2 {
-    animation: slideUp2 0.5s ease-out forwards;
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
-  @keyframes slideUp2 {
-      0% {
-        transform: translateY(100%);
-        opacity: 0;
-      }
-      100% {
-        transform: translateY(-38%);
-        opacity: 1;
-      }
-    }
+}
 
-
- .slideUp3 {
-    animation: slideUp3 0.5s ease-out forwards;
+.slideUp2 {
+  animation: slideUp2 0.5s ease-out forwards;
+}
+@keyframes slideUp2 {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
   }
-  @keyframes slideUp3 {
-      0% {
-        transform: translateY(100%);
-        opacity: 0;
-      }
-      100% {
-        transform: translateY(-74%);
-        opacity: 1;
-      }
-    }
+  100% {
+    transform: translateY(-38%);
+    opacity: 1;
+  }
+}
 
+.slideUp3 {
+  animation: slideUp3 0.5s ease-out forwards;
+}
+@keyframes slideUp3 {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-74%);
+    opacity: 1;
+  }
+}
 
-    .download-button {
-      width: 239px;
-      height: 65px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      cursor: pointer;
-      border-radius: 999px;
-      padding: 22px 32px; /* 22px top/bottom, 32px left/right */
-      background-color: #10E0D7;
-      transition: background-color 1s, transform 1s;
-    }
- 
-    
-    /* Set up initial transitions for children */
-    .download-icon,
-    .download-text {
-      transition: transform 0.6s;
-    }
-    
-    /* On hover, move the icon to the right and text to the left */
-    .download-button:hover .download-icon {
-      transform: translateX(140px);
-    }
-    
-    .download-button:hover .download-text {
-      transform: translateX(-20px);
-    }
-    
-    .my-shadow {
-      box-shadow: 
-        inset 0px 0px 0px 0px #FFFFFF80,
-        0px -2px 40px 0px #10E0D726,
-        0px -2px 10px 0px #E8FFFE4D;
-    }
-    
-    
+.download-button {
+  width: 239px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  border-radius: 999px;
+  padding: 22px 32px; /* 22px top/bottom, 32px left/right */
+  background-color: #10e0d7;
+  transition: background-color 1s, transform 1s;
+}
+
+/* Set up initial transitions for children */
+.download-icon,
+.download-text {
+  transition: transform 0.6s;
+}
+
+/* On hover, move the icon to the right and text to the left */
+.download-button:hover .download-icon {
+  transform: translateX(140px);
+}
+
+.download-button:hover .download-text {
+  transform: translateX(-20px);
+}
+
+.my-shadow {
+  box-shadow: inset 0px 0px 0px 0px #ffffff80, 0px -2px 40px 0px #10e0d726,
+    0px -2px 10px 0px #e8fffe4d;
+}
+
+.airportShadow {
+  text-shadow: 
+    0px -11px 26.1px rgba(72, 212, 206, 0.25),
+    0px -16px 26.5px rgba(72, 212, 206, 0.25); /* Adjust opacity */
+}
