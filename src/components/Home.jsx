@@ -4,8 +4,9 @@ import Header from './UI/Header';
 import TextAnimation from './UI/TextAnimation';
 import Boximg from './UI/Boximg';
 import DownloadTheApp from './UI/DownloadTheApp';
+import BoximgComponent from './UI/BoximgComponent';
 
-function Home({scrollToSection, refs}) {
+function Home({ scrollToSection, refs }) {
     return (
         <div className="relative overflow-hidden font-roboto min-h-[960px]">
             {/* Background Squares with lower z-index */}
@@ -20,8 +21,8 @@ function Home({scrollToSection, refs}) {
             {/* Foreground components */}
             <Header scrollToSection={scrollToSection} refs={refs} />
             <TextAnimation />
-            <div className='absolute right-[132px] top-[136px] w-[413px] h-[332px] z-50'>
-                <span className='flex space-x-[80px] justify-end'>
+            <div className='absolute lg:right-[132px] max-lg:right-2 max-lg:scale-75 max-lg:top-56 lg:top-[136px] w-[413px] h-[332px] z-40 max-md:top-[50%] max-md:hidden'>
+                <span className='flex space-x-[80px] justify-end max-sm:justify-around'>
                     <Boximg HEIGHT="82px" WIDTH="82px" SRC="Shops.svg" Image="Shops" />
                     <Boximg HEIGHT="82px" WIDTH="82px" SRC="lounge.svg" Image="Lounge" />
                 </span>
@@ -38,19 +39,32 @@ function Home({scrollToSection, refs}) {
 
                 </span>
             </div>
-            <div className='absolute bottom-0 right-[72px] z-0'><img className='z-0' src="mobilehomescreen.png" alt="" /></div>
-            <div className='absolute bottom-[68px] right-[72px]'>
-                <span className='flex justify-end mr-14 mb-8'>
+            <div className='md:hidden '>
+            <BoximgComponent />
+            </div>
+            <div className="absolute bottom-0 right-[72px] max-md:right-0 max-sm:right-28 max-lg:bottom-32 max-md:bottom-[35%] z-0  w-screen">
+                <img
+                    className="z-0 min-w-[700px] min-h-[283px] object-cover"
+                    src="mobilehomescreen.png"
+                    alt=""
+                />
+            </div>
+
+            <div className='absolute bottom-[68px] max-md:bottom-4 right-[72px] max-md:right-7 max-sm:right-3'>
+                <span className='flex justify-end mr-14 mb-8 max-md:hidden'>
                     <Boximg HEIGHT="82px" WIDTH="82px" SRC="resturants.svg" Image="Restaurants" />
                 </span>
                 <TextAnimation Text="2" lines={["AIRPORT", "NAVI-APP"]} />
-                <div className='float-right -mt-5'>
-                <DownloadTheApp/>
+                <div className='float-right -mt-5 max-sm:hidden'>
+                    <DownloadTheApp />
+                </div>
+                <div className=' -mt-5 sm:hidden'>
+                    <DownloadTheApp width='100%'/>
                 </div>
             </div>
-                <span className='absolute bottom-28 left-36'>
-                    <Boximg HEIGHT="99.51px" WIDTH="153.44px" SRC="Time.svg" Image="Time until flight" />
-                </span>
+            <span className='absolute bottom-28 left-36 max-lg:scale-75 max-lg:left-8 max-md:bottom-[40%] max-md:left-2'>
+                <Boximg HEIGHT="99.51px" WIDTH="153.44px" SRC="Time.svg" Image="Time until flight" />
+            </span>
         </div>
     );
 }

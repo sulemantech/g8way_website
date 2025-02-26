@@ -10,7 +10,7 @@ function Footer() {
                     className="w-28 h-7"
                 />
             </div>
-            <div className='font-medium flex space-x-3 text-[14px] text-[#FFF] leading-[22px]  tracking-[0] opacity-60'>
+            <div className='font-medium flex space-x-8 text-[14px] text-[#FFF] leading-[22px]  tracking-[0] opacity-60'>
                 <p>Legal information</p>
                 <p>Privacy Policy</p>
             </div>
