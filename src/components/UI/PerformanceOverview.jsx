@@ -4,7 +4,7 @@ import CountUp from './CountUp'
 function PerformanceOverview() {
   return (
     <div className='flex flex-col items-center justify-center h-[874px]'>
-      <p className='font-roboto text-white font-bold text-[35px] leading-[35px] tracking-[2%] text-center uppercase'><span className='text-[#10E0D7]'> G8WAY </span> Performance <span className='text-[#10E0D7]'> Overview </span>  </p>
+      <p className='font-roboto text-white font-bold text-[35px] leading-[35px] tracking-[2%] max-md:text-[28px] max-md:leading-[32px] text-center uppercase'><span className='text-[#10E0D7]'> G8WAY </span> Performance <span className='text-[#10E0D7]'> Overview </span>  </p>
       <div className='flex flex-col justify-between w-[870px] max-lg:max-w-[90vw] h-[658px] max-lg:h-auto'>
         <StatsCard
           widthClass="w-[870px]"
@@ -12,6 +12,7 @@ function PerformanceOverview() {
           countUpFrom={0}
           countUpTo={100}
           widthDescription="w-[500px]"
+           radicalBlur=" max-md:h-[335.03px] max-md:w-[179.96px]"
           countUpDuration={1}
           title="Wait Time Reduction"
           subtitle="Reduction in passenger wait times due to the implementation of G8WAY at airports."
@@ -92,12 +93,12 @@ function StatsCard({
       </div>
 
       {/* Title */}
-      <p className="font-bold text-white text-[24px] leading-[36px] tracking-[0%] mb-3 uppercase">
+      <p className="font-bold text-white text-[24px] leading-[36px] max-md:text-[20px] max-md:leading-[27px] tracking-[0%] mb-3 uppercase">
         {title}
       </p>
 
       {/* Subtitle */}
-      <p className={`font-normal text-white text-[18px] leading-[26px] tracking-[0] text-center ${widthDescription}`}>
+      <p className={`font-normal text-white text-[18px] leading-[26px]  max-md:text-[16px] max-md:leading-[24px] tracking-[0] text-center ${widthDescription}`}>
         {subtitle}
       </p>
     </div>

@@ -20,8 +20,8 @@ function LottieAnimationComponent() {
                 />
             </div>
             <div className='w-[521px] max-[1300px]:w-[420px] max-lg:w-[96%] max-lg:h-full'>
-                <p className='font-bold text-[35px] leading-[35px] tracking-[2%] text-white text-left uppercase mb-2'>Empowering <span className='text-[#10E0D7]'>airports <br /> </span> and  <span className='text-[#10E0D7]'>airlines</span></p>
-                <p className=' text-left font-normal text-[18px] leading-[26px] tracking-[0%] text-[#F0F0F0] opacity-90'>G8WAY not only enhances passenger experiences but also optimizes operations for airports and airlines. By streamlining passenger flow and improving communication, </p>
+                <p className='font-bold text-[35px] leading-[35px] tracking-[2%] max-md:text-[32px] max-md:leading-[36px] text-white text-left uppercase mb-2'>Empowering <span className='text-[#10E0D7]'>airports <br /> </span> and  <span className='text-[#10E0D7]'>airlines</span></p>
+                <p className=' text-left font-normal text-[18px] leading-[26px] max-md:text-[16px] tracking-[0%] text-[#F0F0F0] opacity-90'>G8WAY not only enhances passenger experiences but also optimizes operations for airports and airlines. By streamlining passenger flow and improving communication, </p>
             </div>
         </div>
     );

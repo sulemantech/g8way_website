@@ -14,15 +14,15 @@ function Collaboration() {
                         opacity={"opacity-60"}
                         className="absolute inset-0 -z-10"
                     />
-                    <p className="font-bold text-white text-[46px] leading-[46px] tracking-[2%] mb-3 uppercase text-center">
+                    <p className="font-bold text-white text-[46px] leading-[46px]  max-md:text-[32px] max-md:leading-[34px] tracking-[2%] mb-3 uppercase text-center">
                         Interested in  <span className='text-[#10E0D7]'> collaborating </span> <br /> or <span className='text-[#10E0D7]'> learning more</span>?
                     </p>
 
-                    <p className={`font-normal opacity-90 mb-7 text-white text-[18px] leading-[26px] tracking-[0] text-center w-[843px] max-lg:max-w-[100vw]`}>
+                    <p className={`font-normal opacity-90 mb-7 text-white text-[18px] leading-[26px]  max-md:text-[16px] max-md:leading-[24px] tracking-[0] text-center w-[843px] max-lg:max-w-[100vw]`}>
                         Reach out to us through our user-friendly contact form. Our team looks forward to working <br /> with you and creating innovative solutions.
                     </p>
-                    <div className='w-[632px]'>
-                        <div className='flex space-x-3 mb-5'>
+                    <div className='w-[632px] max-md:max-w-[96vw] '>
+                        <div className='flex space-x-3 mb-5 max-md:flex-col max-md:space-x-0 max-md:space-y-3'>
                             <InputField PlaceHolder={"First name"} />
                             <InputField PlaceHolder={"Last name"} />
                         </div>
@@ -52,8 +52,8 @@ function Collaboration() {
                         <img src="QrcodeG8.svg" alt="" />
                     </div>
                 </div>
-                <div className='w-[632px] h-[684px] max-[1300px]:w-[45vw] rounded-2xl border border-[#86868B33] bg-linear-to-b from-[#FFFFFF0D] to-[#FFFFFF00] max-md:w-[96%]'>
-                    <img className='ml-16 mt-5 max-[1300px]:scale-75' src="g8mobileinhand.png" alt="" />
+                <div className='w-[632px] h-[684px] max-[1300px]:w-[45vw] rounded-2xl border border-[#86868B33] bg-linear-to-b from-[#FFFFFF0D] to-[#FFFFFF00] max-md:w-[96vw] max-md:overflow-hidden'>
+                    <img className='ml-16 mt-5 max-[1300px]:scale-75 max-md:scale-100' src="g8mobileinhand.png" alt="" />
                 </div>
             </div>
         </>

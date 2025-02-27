@@ -25,7 +25,7 @@ function App() {
         <Home scrollToSection={scrollToSection} refs={{ home: homeRef, features: featuresRef, about: aboutRef, contact: contactRef }} />
       </div>
       <OurMission />
-      {/* <TrustedComp />
+      <TrustedComp />
       <LottieAnimationComponent />
       <div className="bg-black" ref={featuresRef}>
         <Features />
@@ -36,7 +36,7 @@ function App() {
       <div ref={contactRef}>
         <Collaboration />
         <Footer />
-      </div> */}
+      </div>
     </div>
   );
 }
