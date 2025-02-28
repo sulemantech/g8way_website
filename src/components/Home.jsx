@@ -21,6 +21,7 @@ function Home({ scrollToSection, refs }) {
             {/* Foreground components */}
             <Header scrollToSection={scrollToSection} refs={refs} />
             <TextAnimation />
+            <img className='absolute right-0 top-0  ' src="StarBg.png" alt="" />
             <div className='absolute lg:right-[132px] max-lg:right-2 max-lg:scale-75 max-lg:top-56 lg:top-[136px] w-[413px] h-[332px] z-40 max-md:top-[50%] max-md:hidden'>
                 <span className='flex space-x-[80px] justify-end max-sm:justify-around'>
                     <Boximg HEIGHT="82px" WIDTH="82px" SRC="Shops.svg" Image="Shops" />
@@ -42,7 +43,7 @@ function Home({ scrollToSection, refs }) {
             <div className='md:hidden '>
                 <BoximgComponent />
             </div>
-            <div className="absolute bottom-0 right-[72px] max-md:right-0 max-sm:right-28 max-lg:bottom-32 max-md:bottom-[39%] z-0  w-screen">
+            <div className="absolute bottom-0 left-[140px] max-md:left-0 max-md:!right-0 max-sm:right-28 max-lg:bottom-32 max-md:bottom-[39%] z-0  w-screen">
                 <img
                     className="z-0 min-w-[700px] min-h-[283px] object-cover"
                     src="mobilehomescreen.png"

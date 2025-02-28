@@ -54,7 +54,7 @@ function MobileWithText({ text, screen, flexStyle, FloatingMobile }) {
     return (
         <div className={`min-h-[960px] max-md:min-h-[870px] flex  ${flexStyle} text-white  items-center justify-between`}>
             {/* Left Card */}
-            <div className='h-[522px] max-md:h-[393px] max-md:p-4 relative max-md:min-h-[393px] max-md:min-w-full border border-[#86868B33] rounded-2xl p-6 bg-linear-to-b from-[#FFFFFF0D] to-[#FFFFFF00]'>
+            <div className='h-[522px] md:min-w-[411px] max-md:h-[393px] max-md:p-4 relative max-md:min-h-[393px] max-md:min-w-full border border-[#86868B33] rounded-2xl p-6 bg-linear-to-b from-[#FFFFFF0D] to-[#FFFFFF00]'>
                 <div className='max-w-[363px] max-h-[321px] flex flex-col'>
                     <img className='w-[40px] max-md:w-[32px] aspect-square mb-8' src={text[0]} alt="Icon" />
                     <p className='font-bold text-[24px] leading-[32px] max-md:text-[20px] max-md:leading-[27px] tracking-[2%] uppercase mb-4'>{text[1]}</p>

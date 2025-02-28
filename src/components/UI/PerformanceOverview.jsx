@@ -1,9 +1,18 @@
 import React from 'react'
 import CountUp from './CountUp'
+import Squares from './Squares';
 
 function PerformanceOverview() {
   return (
-    <div className='flex flex-col items-center justify-center h-[874px]'>
+    <div className='flex flex-col items-center relative justify-center h-[874px]'>
+      <div className='absolute top-0 bg-amber-500 border border-amber-500 z-50'>
+      <Squares
+        squareSize={90}
+        borderColor="#0c1f1f"
+        bgColor='#071010'
+        opacity={"opacity-100"}
+      />
+      </div>
       <p className='font-roboto text-white font-bold text-[35px] leading-[35px] tracking-[2%] max-md:text-[28px] max-md:leading-[32px] text-center uppercase'><span className='text-[#10E0D7]'> G8WAY </span> Performance <span className='text-[#10E0D7]'> Overview </span>  </p>
       <div className='flex flex-col justify-between w-[870px] max-lg:max-w-[90vw] h-[658px] max-lg:h-auto'>
         <StatsCard
@@ -12,7 +21,7 @@ function PerformanceOverview() {
           countUpFrom={0}
           countUpTo={100}
           widthDescription="w-[500px]"
-           radicalBlur=" max-md:h-[335.03px] max-md:w-[179.96px]"
+          radicalBlur=" h-[337.83px] w-[364.34px] max-md:h-[335.03px] max-md:w-[179.96px]"
           countUpDuration={1}
           title="Wait Time Reduction"
           subtitle="Reduction in passenger wait times due to the implementation of G8WAY at airports."
@@ -58,7 +67,7 @@ export default PerformanceOverview
 
 function StatsCard({
   widthClass,
-  heightClass ,
+  heightClass,
   countUpFrom = 0,
   countUpTo = 100,
   countUpDuration = 1,

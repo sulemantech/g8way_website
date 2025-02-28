@@ -10,7 +10,7 @@ function Header({ scrollToSection, refs }) {
   const navItems = [
     { id: "home", label: "Home", containerWidth: 75 },
     { id: "features", label: "Features", containerWidth: 95 },
-    { id: "about", label: "About Us", containerWidth: 89 },
+    { id: "about", label: "About us", containerWidth: 89 },
     { id: "contact", label: "Contact", containerWidth: 97 },
   ];
 
@@ -57,7 +57,7 @@ function Header({ scrollToSection, refs }) {
 
         {/* Actual Menu */}
         <div
-          className="absolute flex items-center justify-between w-[410px] h-[37px] top-[7px] max-md:w-[96vw] max-md:top-16 max-md:flex-col"
+          className="absolute flex items-center justify-between w-[410px] h-[37px] top-[7px] max-md:w-[91.47vw] max-md:top-16 max-md:flex-col"
           style={{
             left: "50%",
             transform: "translateX(-50%)",

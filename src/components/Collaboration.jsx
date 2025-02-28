@@ -21,7 +21,7 @@ function Collaboration() {
                     <p className={`font-normal opacity-90 mb-7 text-white text-[18px] leading-[26px]  max-md:text-[16px] max-md:leading-[24px] tracking-[0] text-center w-[843px] max-lg:max-w-[100vw]`}>
                         Reach out to us through our user-friendly contact form. Our team looks forward to working <br /> with you and creating innovative solutions.
                     </p>
-                    <div className='w-[632px] max-md:max-w-[96vw] '>
+                    <div className='w-[632px] max-md:max-w-[91.47vw] '>
                         <div className='flex space-x-3 mb-5 max-md:flex-col max-md:space-x-0 max-md:space-y-3'>
                             <InputField PlaceHolder={"First name"} />
                             <InputField PlaceHolder={"Last name"} />
@@ -38,7 +38,7 @@ function Collaboration() {
 
             </div>
             <div className='h-[844px] font-roboto flex items-center justify-center space-x-8 bg-black max-md:flex-col max-md:h-auto'>
-                <div className='w-[632px] h-[684px] max-[1300px]:w-[45vw] relative flex flex-col space-y-3 items-center justify-center rounded-2xl border border-[#86868B33] bg-linear-to-b from-[#FFFFFF0D] to-[#FFFFFF00] max-md:w-[96%]'>
+                <div className='w-[632px] h-[684px] max-[1300px]:w-[45vw] relative flex flex-col space-y-3 items-center justify-center rounded-2xl border border-[#86868B33] bg-linear-to-b from-[#FFFFFF0D] to-[#FFFFFF00] max-md:w-[91.47%]'>
                     <p className="font-bold text-white text-[35px] w-[552px] max-lg:max-w-[100%] max-lg:scale-95 text-left leading-[35px] tracking-[2%] mb-3 uppercase max-[1300px]:scale-75">
                         <span className='text-[#10E0D7] '> Discover </span>  seamless <br /> airport navigation <span className='text-[#10E0D7]'> today </span>
                     </p>
@@ -52,7 +52,7 @@ function Collaboration() {
                         <img src="QrcodeG8.svg" alt="" />
                     </div>
                 </div>
-                <div className='w-[632px] h-[684px] max-[1300px]:w-[45vw] rounded-2xl border border-[#86868B33] bg-linear-to-b from-[#FFFFFF0D] to-[#FFFFFF00] max-md:w-[96vw] max-md:overflow-hidden'>
+                <div className='w-[632px] h-[684px] max-[1300px]:w-[45vw] rounded-2xl border border-[#86868B33] bg-linear-to-b from-[#FFFFFF0D] to-[#FFFFFF00] max-md:w-[91.47vw] max-md:overflow-hidden'>
                     <img className='ml-16 mt-5 max-[1300px]:scale-75 max-md:scale-100' src="g8mobileinhand.png" alt="" />
                 </div>
             </div>

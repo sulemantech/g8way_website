@@ -47,18 +47,18 @@ function About() {
                 </div>
             </div>
             <div className='py-24 px-[72px] flex justify-between items-end max-lg:flex-col max-lg:space-y-4 max-lg:items-center'>
-                <img className='w-[616px] h-[459px] max-xl:scale-90 max-lg:scale-100 object-contain max-md:min-w-[96vw] max-md:h-[240px]' src="aboutaeroplane.png" alt="" />
-                <div className=' flex flex-col space-y-3 items-start ml-3 justify-between w-[521px] max-md:w-[96vw] max-xl:scale-90 max-lg:scale-100'>
+                <img className='w-[616px] h-[459px] rounded-[20px] max-xl:scale-90 max-lg:scale-100 object-contain max-md:min-w-[91.47vw] max-md:h-[240px]' src="aboutaeroplane.png" alt="" />
+                <div className=' flex flex-col space-y-3 items-start ml-3 justify-between w-[521px] max-md:w-[91.47vw] max-xl:scale-90 max-lg:scale-100'>
                     <p className='font-roboto text-white font-bold text-[46px] leading-[46px] tracking-[2%] text-center uppercase max-md:text-[32px] max-md:leading-[34px]'>Business <span className='text-[#10E0D7]'> benefits </span></p>
                     <p className='font-normal text-[18px] text-[#f0f0f0] opacity-90 leading-[26px] max-md:text-[16px] max-md:leading-[24px] tracking-[0]'>G8WAY provides a range of advantages for airports and airlines. By streamlining passenger flow, the app cuts down on wait times at security checkpoints and gates. Simultaneously, it boosts revenue with tailored offers and advertising chances for retailers. Airlines see gains in better capacity use and improved passenger communication.</p>
                 </div>
             </div>
             <div className='py-20 px-[72px] flex justify-between items-end max-lg:flex-col max-lg:space-y-4 max-lg:items-center'>
-                <div className=' flex flex-col space-y-3 items-start ml-3 justify-between w-[521px] max-md:w-[96vw] max-xl:scale-90 max-lg:scale-100'>
+                <div className=' flex flex-col space-y-3 items-start ml-3 justify-between w-[521px] max-md:w-[91.47vw] max-xl:scale-90 max-lg:scale-100'>
                     <p className='font-roboto text-white font-bold text-[46px] leading-[46px] tracking-[2%] max-md:text-[32px] max-md:leading-[34px] text-center uppercase'><span className='text-[#10E0D7]'> Case </span> studies </p>
                     <p className='font-normal text-[18px] text-[#f0f0f0] opacity-90 leading-[26px] tracking-[0] max-md:text-[16px] max-md:leading-[24px]'>The implementation of G8WAY at leading airports like Frankfurt has delivered impressive results. Passenger flow was managed more efficiently, wait times were significantly reduced, and traveler satisfaction increased. A detailed analysis highlights how our app optimizes processes while maximizing revenue potential.</p>
                 </div>
-                <img className='w-[616px] h-[459px] rounded-2xl max-xl:scale-90 max-lg:scale-100 object-contain max-md:min-w-[96vw] max-md:min-h-[240px]' src="aboutMuseum.png" alt="" />
+                <img className='w-[616px] h-[459px] rounded-[20px] max-xl:scale-90 max-lg:scale-100 object-contain max-md:min-w-[91.47vw] max-md:min-h-[240px]' src="aboutMuseum.png" alt="" />
             </div>
             <div className=''><PerformanceOverview /></div>
             <div><TravelInovation /></div>
