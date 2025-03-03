@@ -55,16 +55,16 @@ function MobileWithText({ text, screen, flexStyle, FloatingMobile }) {
         <div className={`min-h-[960px] max-md:min-h-[870px] flex  ${flexStyle} text-white  items-center justify-between`}>
             {/* Left Card */}
             <div className='h-[522px] md:min-w-[411px] max-md:h-[393px] max-md:p-4 relative max-md:min-h-[393px] max-md:min-w-full border border-[#86868B33] rounded-2xl p-6 bg-linear-to-b from-[#FFFFFF0D] to-[#FFFFFF00]'>
-                <div className='max-w-[363px] max-h-[321px] flex flex-col'>
+                <div className='max-w-[363px] font-roboto max-h-[321px] min-h-[302px] flex flex-col'>
                     <img className='w-[40px] max-md:w-[32px] aspect-square mb-8' src={text[0]} alt="Icon" />
                     <p className='font-bold text-[24px] leading-[32px] max-md:text-[20px] max-md:leading-[27px] tracking-[2%] uppercase mb-4'>{text[1]}</p>
-                    <p className='font-normal text-[18px] leading-[26px] max-md:text-[16px] max-md:leading-[24px] tracking-[0%] text-[#F0F0F0] opacity-90'>{text[2]}</p>
+                    <p className='font-normal text-[18px] min-h-[208px] leading-[26px] max-md:text-[16px] max-md:leading-[24px] tracking-[0%] text-[#F0F0F0] opacity-90'>{text[2]}</p>
                 </div>
                 <p className='font-normal text-[16px] leading-[24px] tracking-[0%] uppercase absolute bottom-6 left-8'>
                     {text[3]}
                 </p>
             </div>
-            <div className=' w-full max-md:min-h-fit max-md:my-12 max-h-[614px] max-md:max-h-[429px] bg-[url(bgMobile.svg)] bg-[50%_70%] max-md:flex max-md:justify-center max-md:items-center'>
+            <div className=' w-full max-md:min-h-fit max-md:my-12 max-h-[614px] max-md:max-h-[429px] bg-[url(bgMobile.svg)] bg-[20%_50%] max-md:flex max-md:justify-center max-md:items-center'>
                 <img className={`${FloatingMobile}`} src={screen} alt="Screen" />
             </div>
         </div>

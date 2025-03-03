@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
     return (
-        <div className='bg-black font-roboto h-[66px] flex justify-between px-[72px] max-md:px-6 items-center pb-3 max-md:flex-col max-md:h-auto max-md:space-y-4'>
+        <div className='bg-[#050C0C] font-roboto h-[66px] flex justify-between px-[72px] max-md:px-6 items-center pb-3 max-md:flex-col max-md:h-auto max-md:space-y-4'>
             <div className="flex items-center ">
                 <img
                     src="g8way.svg"

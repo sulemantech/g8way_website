@@ -4,7 +4,7 @@ import DownloadTheApp from './UI/DownloadTheApp'
 
 function TrustedComp() {
   return (
-    <div className='bg-black  font-roboto flex flex-col items-center justify-center min-h-[763px] max-md:py-10'>
+    <div className='bg-[#050C0C]  font-roboto flex flex-col items-center justify-center min-h-[763px] max-md:py-10'>
       <div className='flex flex-col items-center justify-between w-[1292px] max-[1300px]:w-full min-h-[603px]'>
         <p className="text-white font-bold text-[46px] mt-[18px] leading-[46px] tracking-[2%] max-md:text-[32px] max-md:leading-[34px] text-center font-roboto uppercase max-md:pb-4">G8WAY is your <br /> <span className='text-[#10E0D7]'>trusted companion</span></p>
         <div className='flex space-x-4 items-center justify-center min-h-[169px] w-[1292px] max-[1300px]:w-full max-[1300px]:grid max-[1300px]:grid-cols-3 max-[1300px]:place-items-center max-[768px]:grid-cols-1 max-[1300px]:gap-4'>
@@ -14,7 +14,7 @@ function TrustedComp() {
           <TrustedCompCard NumberText={"04"} Image={"Securitychack.svg"} Text={"Get seamless Check-In /n and Security Control"} />
           <TrustedCompCard NumberText={"05"} Image={"flightticket.svg"} Text={"Information about the /n next connecting flight"} />
         </div>
-        <p className='font-semibold text-[21px] leading-[29px] max-md:font-normal max-md:text-[18px] max-md:leading-[22.5px] tracking-[0.23px] max-md:text-left text-center max-md:tracking-[0%] text-[#86868B] max-md:w-[91.47%] max-md:my-8'>Whether you’re finding your way to the gate, checking real-time flight <br /> updates, or seeking personalized recommendations for shops and lounges,<br /> G8WAY is your trusted companion.</p>
+        <p className='font-semibold font-inter text-[21px] leading-[29px] max-md:font-normal max-md:text-[18px] max-md:leading-[22.5px] tracking-[0.23px] max-md:text-left text-center max-md:tracking-[0%] text-[#86868B] max-md:w-[91.47%] max-md:my-8'>Whether you’re finding your way to the gate, checking real-time flight <br /> updates, or seeking personalized recommendations for shops and lounges,<br /> G8WAY is your trusted companion.</p>
         <div className=''>
           <DownloadTheApp className={"max-sm:!w-[91.47vw] "} />
         </div>

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900");
 @import "tailwindcss";
 @custom-variant default-hover (&:hover);
 :root {
@@ -9,6 +9,7 @@
 
 @theme {
   --font-roboto: "Roboto", sans-serif;
+  --font-inter: "Inter", serif;
 }
 
 /* 
@@ -39,7 +40,7 @@
     opacity: 0;
   }
   100% {
-    transform: translateY(-38%);
+    transform: translateY(-35%);
     opacity: 1;
   }
 }
@@ -53,7 +54,7 @@
     opacity: 0;
   }
   100% {
-    transform: translateY(-74%);
+    transform: translateY(-70%);
     opacity: 1;
   }
 }

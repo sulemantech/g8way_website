@@ -4,14 +4,20 @@ import Squares from './Squares';
 
 function PerformanceOverview() {
   return (
-    <div className='flex flex-col items-center relative justify-center h-[874px]'>
-      <div className='absolute top-0 bg-amber-500 border border-amber-500 z-50'>
+    <div className='flex flex-col overflow-hidden items-center relative justify-center h-[874px]'>
+      {/* <div className='absolute top-0 bg-amber-500 border border-amber-500 z-50'>
       <Squares
         squareSize={90}
         borderColor="#0c1f1f"
         bgColor='#071010'
         opacity={"opacity-100"}
       />
+      </div> */}
+      <div className='absolute w-[833px] h-[126px] -top-8 left-0'>
+        <img src="BarsBgRight.png" alt="" />
+      </div>
+      <div className='absolute w-[833px] h-[126px] -top-8 right-0'>
+        <img src="BarsBgleft.png" alt="" />
       </div>
       <p className='font-roboto text-white font-bold text-[35px] leading-[35px] tracking-[2%] max-md:text-[28px] max-md:leading-[32px] text-center uppercase'><span className='text-[#10E0D7]'> G8WAY </span> Performance <span className='text-[#10E0D7]'> Overview </span>  </p>
       <div className='flex flex-col justify-between w-[870px] max-lg:max-w-[90vw] h-[658px] max-lg:h-auto'>
@@ -102,12 +108,12 @@ function StatsCard({
       </div>
 
       {/* Title */}
-      <p className="font-bold text-white text-[24px] leading-[36px] max-md:text-[20px] max-md:leading-[27px] tracking-[0%] mb-3 uppercase">
+      <p className="font-bold text-[#FFFFFF] text-[24px] leading-[36px] max-md:text-[20px] max-md:leading-[27px] tracking-[0%] mb-3 uppercase">
         {title}
       </p>
 
       {/* Subtitle */}
-      <p className={`font-normal text-white text-[18px] leading-[26px]  max-md:text-[16px] max-md:leading-[24px] tracking-[0] text-center ${widthDescription}`}>
+      <p className={`font-normal text-[#F0F0F0] text-[18px] leading-[26px]  max-md:text-[16px] max-md:leading-[24px] tracking-[0] text-center ${widthDescription}`}>
         {subtitle}
       </p>
     </div>

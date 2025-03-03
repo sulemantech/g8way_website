@@ -4,7 +4,7 @@ const Dropdown = ({ title, icon, arrowIcon, imageSrc, text }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-full max-w-md mx-auto border border-[#86868B33] rounded-lg bg-black text-white shadow-md">
+    <div className="w-full max-w-md mx-auto border border-[#86868B33] rounded-lg bg-[#050C0C] text-white shadow-md">
       {/* Dropdown Button (Title Section) */}
       <button
         className="flex items-center justify-between w-full p-4 rounded-lg"

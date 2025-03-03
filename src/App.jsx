@@ -27,7 +27,7 @@ function App() {
       <OurMission />
       <TrustedComp />
       <LottieAnimationComponent />
-      <div className="bg-black" ref={featuresRef}>
+      <div className="bg-[#050C0C]" ref={featuresRef}>
         <Features />
       </div>
       <div ref={aboutRef}>
