@@ -23,10 +23,10 @@ function Header({ scrollToSection, refs }) {
         </div>
 
         <div
-          className="md:hidden p-2 z-50 text-white w-[48px] h-[48px] bg-[#141819] rounded-lg flex justify-center items-center"
+          className="md:hidden mt-[24px] p-2 z-50 text-white w-[48px] h-[48px] bg-[#141819] rounded-lg flex justify-center items-center"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <div className="flex flex-col space-y-2 transition-transform duration-300">
+          <div className="flex flex-col space-y-1.5 transition-transform duration-300">
             <div
               className={`w-4 h-0.5 bg-[#fff] rounded-lg transition-transform duration-300 ${isOpen ? "rotate-45 mt-0" : ""
                 }`}
