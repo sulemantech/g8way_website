@@ -15,7 +15,7 @@ function TextAnimation({ lines = ["STEP", "INTO THE", "FUTURE"] }) {
                         className={`font-roboto mix-blend-lighten text-transparent w-fit bg-clip-text text-[88px] max-md:text-[62px] font-extrabold leading-none tracking-[3%] 
                         ${index === lines.length - 1 ? "bg-linear-to-b from-[#93FFFA] to-[#10E0D7] airportShadow" : "bg-linear-to-b from-[#e0dfdbe8] to-[#45595bb7]"}
                         ${animationClass} 
-                        ${index === 1 && line === "NAVI-APP" ? "-ml-[48px] tracking-[1px] max-md:-ml-10 max-md:tracking-[0%]" : ""}`}
+                        ${index === 1 && line === "NAVI-APP" ? "-ml-[48px] tracking-[1px] max-md:-ml-[31.9px] max-md:tracking-[0.1px] max-md:pt-[3px]" : ""}`}
                         style={{ animationDelay: `${index * 0.1}s` }}
                     >
                         {line}

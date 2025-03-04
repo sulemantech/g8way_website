@@ -66,7 +66,7 @@ export default Collaboration
 function InputField({ PlaceHolder }) {
     return (
         <div className="w-full">
-            <div className="relative w-full font-roboto text-white font-normal  text-[16px] leading-[24px] tracking-[0%] text-center ">
+            <div className="relative w-full font-roboto text-white font-normal  text-[16px] max-md:text-[14px] leading-[24px] tracking-[0%] text-center ">
                 <input
                     className="peer w-full h-[48px] bg-transparent placeholder:text-[#fff] text-[#fff] border border-[#FFFFFF1A] rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-[#FFFFFF1A] hover:border-[#FFFFFF1A] shadow-sm focus:shadow"
                 />

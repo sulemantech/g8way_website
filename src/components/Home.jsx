@@ -50,7 +50,7 @@ function Home({ scrollToSection, refs }) {
                     alt=""
                 />
             </div>
-            <div className="absolute w-full h-[80.15px] top-[480.57px] left-0 bg-gradient-to-t from-[#050C0C] via-[#050C0C26] to-transparent"></div>
+            <div className="absolute w-full h-[80.15px] top-[480.57px] left-0 bg-gradient-to-t from-[#050C0C] via-[#050C0C26] to-transparent md:hidden"></div>
 
 
             <div className='absolute bottom-[68px] max-md:bottom-14 right-[72px] max-md:right-7 max-sm:right-3'>

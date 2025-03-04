@@ -4,13 +4,13 @@ export default function TrustedCompCard({ NumberText, Image, Text }) {
       <p className="text-[#10E0D7] text-[24px] leading-[24px] tracking-[0%] text-center font-normal w-fit md:hidden">{NumberText}</p>
       <div className="flex flex-col items-center justify-center space-y-2 max-md:flex-row-reverse min-w-[90%]  max-md:justify-between max-md:px-2">
         <img className="min-w-[34px] min-h-[34px]" src={Image} alt="" />
-        <p className="text-[#86868b] font-inter text-[16px] text-center font-normal w-[187.2px] min-h-[70.55px] flex flex-col justify-end max-md:text-left bg-amber-300 max-md:hidden">{Text.split("/n").map((line, index) => (
+        <p className="text-[#86868b] font-inter text-[16px] text-center font-normal w-[187.2px] min-h-[70.55px] flex flex-col justify-end max-md:text-left max-md:hidden">{Text.split("/n").map((line, index) => (
           <span key={index}>
             {line}
             <br />
           </span>
         ))}</p>
-        <p className="text-[#86868b] font-inter text-[16px] text-center font-normal w-[224px] min-h-[70.55px] flex flex-col justify-center max-md:text-left">
+        <p className="text-[#F0F0F0] md:hidden font-roboto text-[16px] text-center font-normal w-[224px] min-h-[70.55px] flex flex-col justify-center max-md:text-left">
           {Text.replace(/\/n/g, " ")}
         </p>
 
