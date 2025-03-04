@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { div } from "framer-motion/client";
 import DownloadTheApp from "./DownloadTheApp";
@@ -13,9 +13,20 @@ function Header({ scrollToSection, refs }) {
     { id: "about", label: "About us", containerWidth: 89 },
     { id: "contact", label: "Contact", containerWidth: 97 },
   ];
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden"; // Lock scrolling
+    } else {
+      document.body.style.overflow = "auto"; // Unlock scrolling
+    }
+
+    return () => {
+      document.body.style.overflow = "auto"; // Cleanup on unmount
+    };
+  }, [isOpen]);
 
   return (
-    <div className="relative w-full h-[110px] z-50">
+    <div className={`relative w-full h-[110px] ${isOpen && "min-h-screen bg-black"} z-50`}>
       <div className="flex items-center justify-between p-4 text-white">
         {/* Logo */}
         <div className="flex items-center mt-7 ml-[107px] max-lg:ml-[4%]">
@@ -32,7 +43,7 @@ function Header({ scrollToSection, refs }) {
                 }`}
             ></div>
             <div
-              className={`w-4 h-0.5 bg-[#fff] rounded-lg transition-transform duration-300 ${isOpen ? "-rotate-45 -mt-2.5" : ""
+              className={`w-4 h-0.5 bg-[#fff] rounded-lg transition-transform duration-300 ${isOpen ? "-rotate-45 -mt-2" : ""
                 }`}
             ></div>
           </div>
@@ -69,6 +80,7 @@ function Header({ scrollToSection, refs }) {
               key={item.id}
               onClick={() => {
                 setActive(item.id);
+                setIsOpen(false);
                 scrollToSection(refs[item.id]);
               }}
               className={`flex items-center justify-center max-md:min-w-full max-md:z-[60] max-md:min-h-[56px] rounded-lg cursor-pointer transition-colors ${active === item.id ? "bg-white" : "max-md:bg-[#1E202199]"

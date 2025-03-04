@@ -4,7 +4,7 @@ import Squares from './UI/Squares'
 function Features() {
     return (
         <div className='pt-14  w-[1296px] max-[1297px]:w-fit mx-auto'>
-            <p className='font-bold font-roboto text-[46px] text-white leading-[46px] max-md:text-[32px] max-md:leading-[34px] tracking-[2%] text-center uppercase'><span className='text-[#10E0D7]'>5 features</span> to transform <br /> your airport <span className='text-[#10E0D7]'> experience</span></p>
+            <p className='font-bold font-roboto text-[46px] text-white leading-[46px] max-md:text-[32px] max-md:leading-[34px] tracking-[2%] text-center uppercase'><span className='text-[#10E0D7]'>5 features <span className='md:hidden'><br /></span></span> to transform <span className='max-md:hidden'><br /></span> your airport <span className='text-[#10E0D7]'> experience</span></p>
             <MobileWithText
                 text={["navigationIcon.svg",
                     "Indoor navigation system",
@@ -52,7 +52,7 @@ export default Features
 
 function MobileWithText({ text, screen, flexStyle, FloatingMobile }) {
     return (
-        <div className={`min-h-[960px] max-md:min-h-[870px] flex  ${flexStyle} text-white  items-center justify-between`}>
+        <div className={`min-h-[960px] max-md:min-h-[870px] flex  ${flexStyle} text-white max-md:w-[91.47vw] max-md:mx-auto max-md:mt-12   items-center justify-between`}>
             {/* Left Card */}
             <div className='h-[522px] md:min-w-[411px] max-md:h-[393px] max-md:p-4 relative max-md:min-h-[393px] max-md:min-w-full border border-[#86868B33] rounded-2xl p-6 bg-linear-to-b from-[#FFFFFF0D] to-[#FFFFFF00]'>
                 <div className='max-w-[363px] font-roboto max-h-[321px] min-h-[302px] flex flex-col'>
@@ -64,8 +64,8 @@ function MobileWithText({ text, screen, flexStyle, FloatingMobile }) {
                     {text[3]}
                 </p>
             </div>
-            <div className=' w-full max-md:min-h-fit max-md:my-12 max-h-[614px] max-md:max-h-[429px] bg-[url(bgMobile.svg)] bg-[20%_50%] max-md:flex max-md:justify-center max-md:items-center'>
-                <img className={`${FloatingMobile}`} src={screen} alt="Screen" />
+            <div className=' w-full max-md:w-[100vw]  max-md:my-12 max-h-[614px] max-md:min-h-[429px] bg-[url(bgMobile.svg)] bg-[20%_50%] max-md:bg-center max-md:flex max-md:justify-center max-md:items-center'>
+                <img className={`${FloatingMobile} max-md:w-[56.27%] max-md:min-h-full`} src={screen} alt="Screen" />
             </div>
         </div>
     );
