@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router";
 
 function Footer() {
     return (
@@ -11,8 +12,8 @@ function Footer() {
                 />
             </div>
             <div className='font-medium flex space-x-8 text-[14px] text-[#FFF] leading-[22px]  tracking-[0] opacity-60'>
-                <p>Legal information</p>
-                <p>Privacy Policy</p>
+                <p><Link to='./legalinformation'> Legal information </Link></p>
+                <p><Link to='./privacypolicy'>Privacy Policy</Link></p>
             </div>
             <div>
                 <p className='font-normal text-[14px] text-[#F0F0F0] leading-[16.41px] tracking-[0] '>© 2025 G8WAY. All rights reserved</p>
