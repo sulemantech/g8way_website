@@ -80,7 +80,7 @@
 
 /* On hover, move the icon to the right and text to the left */
 .download-button:hover .download-icon {
-  transform: translateX(140px);
+  transform: translateX(160px);
 }
 
 .download-button:hover .download-text {

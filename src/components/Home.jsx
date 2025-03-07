@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Squares from './UI/Squares';
 import Header from './UI/Header';
 import TextAnimation from './UI/TextAnimation';
@@ -7,8 +7,34 @@ import DownloadTheApp from './UI/DownloadTheApp';
 import BoximgComponent from './UI/BoximgComponent';
 
 function Home({ scrollToSection, refs }) {
+    const homeRef = useRef(null);
+    const [isSticky, setIsSticky] = useState(true);
+    const [showHeader, setShowHeader] = useState(true);
+
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                // Get how much of Home section is visible
+                const visiblePercentage = entry.intersectionRatio * 100;
+                setShowHeader(visiblePercentage > 10); // Show header if at least 20% is visible
+            },
+            { root: null, threshold: [0.1, 0.8] } // Detect when 20% or 80% is visible
+        );
+
+        if (homeRef.current) {
+            observer.observe(homeRef.current);
+        }
+
+        return () => {
+            if (homeRef.current) {
+                observer.unobserve(homeRef.current);
+            }
+        };
+    }, []);
+
     return (
-        <div className="relative overflow-hidden font-roboto min-h-[960px] max-md:min-h-[1015px]">
+        <div ref={homeRef} className="relative overflow-hidden font-roboto min-h-[960px] max-md:min-h-[1015px]">
             {/* Background Squares with lower z-index */}
             <Squares
                 squareSize={90}
@@ -18,9 +44,17 @@ function Home({ scrollToSection, refs }) {
                 className="absolute inset-0 -z-10"
             />
 
-            {/* Foreground components */}
-            <Header scrollToSection={scrollToSection} refs={refs} />
+            {/* Placeholder to maintain layout when header is fixed */}
+            <div className={`w-full ${isSticky ? ' w-full h-[110px] ' : 'h-0'}`}>
+            </div>
+
+            <div className={`w-full top-0 left-0 z-50 transition-all duration-300 ${showHeader ? 'fixed' : 'hidden'}`}>
+                <Header scrollToSection={scrollToSection} refs={refs} />
+            </div>
+
+
             <TextAnimation />
+
             <img className='absolute top-0' src="StarBg.png" alt="" />
             <div className='absolute lg:right-[132px] max-lg:right-2 max-lg:scale-75 max-lg:top-56 lg:top-[136px] w-[413px] h-[332px] z-40 max-md:top-[50%] max-md:hidden'>
                 <span className='flex space-x-[80px] justify-end max-sm:justify-around'>
@@ -64,11 +98,11 @@ function Home({ scrollToSection, refs }) {
 
             </div>
             <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 sm:hidden">
-                <DownloadTheApp width="96vw" />
+                <DownloadTheApp width="91.47vw" className={"max-md:!h-[56px]"} />
             </div>
 
-            <span className='absolute bottom-28 left-36 max-lg:scale-75 max-lg:left-8 max-md:bottom-[45.5%] max-md:left-2'>
-                <Boximg HEIGHT="99.51px" WIDTH="153.44px" SRC="Time.svg" Image="Time until flight" />
+            <span className='absolute bottom-28 left-36 max-lg:scale-75 max-lg:left-8 max-md:bottom-[48%] max-md:left-[18px] max-md:scale-100'>
+                <Boximg HEIGHT="99.51px" WIDTH="153.44px" className="max-md:!h-[64px] max-md:!w-[113px]" SRC="Time.svg" Image="Time until flight" />
             </span>
         </div>
     );

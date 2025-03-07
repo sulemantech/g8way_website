@@ -1,13 +1,17 @@
 import Footer from "./Footer";
+import { Link } from "react-router";
+
 export default function LegalInformation() {
     return (
         <div className="min-h-screen bg-black text-white font-roboto">
             <div className="flex items-center justify-center h-36 w-full">
+            <Link to="/">
                 <img src="g8way.svg" alt="Company Logo" className="w-28 h-7" />
+                </Link>
             </div>
             {/* Title Section */}
             <div className="w-full relative bg-[#10E0D7] flex items-center justify-center text-center p-6 md:min-h-[320px]">
-                <h1 className="text-3xl md:text-5xl font-bold uppercase">Legal Information</h1>
+                <h1 className="text-3xl md:text-5xl font-bold uppercase">IMPRINT</h1>
             </div>
 
             {/* Content Sections */}

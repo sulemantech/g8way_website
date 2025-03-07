@@ -3,7 +3,7 @@ import Boximg from './Boximg'
 
 function BoximgComponent() {
     return (
-        <div className='absolute z-40 bottom-[26%] right-5 flex space-x-[56px] items-end'>
+        <div className='absolute  z-40 bottom-[25.5%] right-5 flex space-x-[56px] items-end'>
             <span className='flex items-center justify-center'>
                 <Boximg HEIGHT="56px" WIDTH="56px" SRC="gates.svg" classNameImage={"!w-[16px] !h-[16px]"} Image="Gates" />
                 <div className='flex flex-col space-y-[56px]'>

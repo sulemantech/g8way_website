@@ -2,7 +2,7 @@ import React from 'react'
 
 function TravelInovation() {
     return (
-        <div className='min-h-[875px] max-md:min-h-fit max-md:py-16 font-roboto flex flex-col space-y-8 mt-8 justify-center max-md:w-[91.47vw] max-md:mx-auto items-center'>
+        <div className='min-h-[875px] max-md:min-h-fit max-md:py-16 font-roboto flex flex-col space-y-8 mt-8 justify-center max-md:w-[91.47vw] max-md:mx-auto items-center max-md:mt-10'>
             <div className='flex flex-col space-y-3 items-center max-md:w-[91.47vw] max-md:mx-auto'>
             <p className="font-bold text-white text-[46px] leading-[46px]  max-md:text-[32px] max-md:leading-[34px] max-md:text-left tracking-[2%] mb-3 uppercase text-center">
             Want to be part of <br /> the <span className='text-[#10E0D7]'> travel innovation</span>?

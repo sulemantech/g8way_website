@@ -4,7 +4,7 @@ import Squares from './Squares';
 
 function PerformanceOverview() {
   return (
-    <div className='flex flex-col overflow-hidden items-center relative justify-center h-[874px] max-lg:h-auto'>
+    <div className='flex flex-col overflow-hidden items-center relative justify-center h-[874px] max-lg:h-auto max-md:min-h-fit'>
       {/* <div className='absolute top-0 bg-amber-500 border border-amber-500 z-50'>
       <Squares
         squareSize={90}
@@ -30,6 +30,9 @@ function PerformanceOverview() {
           radicalBlur=" h-[337.83px] w-[364.34px] max-md:!h-[335.03px] max-md:!w-[179.96px]"
           countUpDuration={1}
           title="Wait Time Reduction"
+          countUpClass="font-roboto font-bold text-[80px] leading-[88px] tracking-[0] text-center bg-linear-to-b from-[#10E0D7] to-[#01625E] bg-clip-text text-transparent  max-md:font-roboto max-md:font-bold max-md:text-[60px] max-md:leading-[66px] max-md:tracking-[0] max-md:text-center 
+              max-md:bg-gradient-to-b max-md:from-[#10E0D7] max-md:to-[#01625E] max-md:bg-clip-text max-md:text-transparent"
+
           subtitle="Reduction in passenger wait times due to the implementation of G8WAY at airports."
         />
         <div className='flex justify-between max-lg:flex-col'>
@@ -86,7 +89,7 @@ function StatsCard({
 }) {
   return (
     <div
-      className={`relative font-roboto bg-linear-to-b overflow-hidden from-[#FFFFFF0D] to-[#FFFFFF00] border border-[#86868B33] rounded-2xl ${widthClass} ${heightClass} max-lg:min-w-full max-lg:max-w-full my-shadow flex flex-col justify-center items-center mt-8`}
+      className={`relative font-roboto bg-linear-to-b overflow-hidden from-[#FFFFFF0D] to-[#FFFFFF00] border border-[#86868B33] rounded-2xl ${widthClass} ${heightClass} max-lg:min-w-full max-lg:max-w-full max-md:w-[91.47vw] max-md:max-h-[195px] my-shadow flex flex-col justify-center items-center mt-8`}
     >
       <div className={`absolute -top-24
                ${radicalBlur}
@@ -96,7 +99,7 @@ function StatsCard({
 
 
       {/* CountUp Section */}
-      <div className="mb-10">
+      <div className="mb-10 max-md:mb-3">
         <CountUp
           from={countUpFrom}
           to={countUpTo}
