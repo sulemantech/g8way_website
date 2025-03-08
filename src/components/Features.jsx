@@ -20,6 +20,7 @@ function Features() {
                 screen="secmobile.svg"
                 flexStyle={"flex-row-reverse space-x-0  max-lg:space-x-[30px] max-md:space-x-[0px] max-md:flex-col"}
                 FloatingMobile={"float-end mr-[86px] max-lg:mr-[30px] max-md:float-none max-md:mr-[0px]"}
+                imageplace={"bg-[120%_50%] "}
             />
             <MobileWithText
                 text={["thirdico.svg",
@@ -35,6 +36,7 @@ function Features() {
                 screen="fourthmobile.svg"
                 flexStyle={"flex-row-reverse space-x-0  max-lg:space-x-[30px] max-md:space-x-[0px] max-md:flex-col"}
                 FloatingMobile={"float-end mr-[86px] max-lg:mr-[30px] max-md:float-none max-md:mr-[0px]"}
+                imageplace={"bg-[120%_50%] "}
             />
             <MobileWithText
                 text={["fifthico.svg",
@@ -50,7 +52,7 @@ function Features() {
 export default Features
 
 
-function MobileWithText({ text, screen, flexStyle, FloatingMobile }) {
+function MobileWithText({ text, screen, flexStyle, FloatingMobile , imageplace = "bg-[20%_50%]" }) {
     return (
         <div className={`min-h-[960px] max-md:min-h-fit max-md:gap-12 max-md:pt-12 flex  ${flexStyle} text-white max-md:w-[91.47vw] max-md:mx-auto   items-center justify-between`}>
             {/* Left Card */}
@@ -64,7 +66,7 @@ function MobileWithText({ text, screen, flexStyle, FloatingMobile }) {
                     {text[3]}
                 </p>
             </div>
-            <div className=' w-full max-md:w-[100vw]  max-h-[614px] max-md:min-h-[429px] bg-[url(bgMobile.svg)] bg-[20%_50%] max-md:bg-center max-md:flex max-md:justify-center max-md:items-center'>
+            <div className={` w-full max-md:w-[100vw]  max-h-[614px] max-md:min-h-[429px] bg-[url(bgMobile.svg)] ${imageplace} max-md:bg-center max-md:flex max-md:justify-center max-md:items-center`}>
                 <img className={`${FloatingMobile} max-md:w-[56.27%] max-md:min-h-full`} src={screen} alt="Screen" />
             </div>
         </div>

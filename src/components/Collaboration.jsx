@@ -118,15 +118,15 @@ function Collaboration() {
                         ) : (
                             /* Show Form Only If No Response Yet */
                             <form onSubmit={handleSubmit} className="w-[632px] max-md:max-w-[91.47vw]">
-                                <div className="flex space-x-3 mb-5 max-md:flex-col max-md:space-x-0 max-md:space-y-3">
+                                <div className="flex space-x-5 mb-4 max-md:flex-col max-md:space-x-0 max-md:space-y-3">
                                     <InputField name="firstName" value={formData.firstName} onChange={handleChange} PlaceHolder="First name" />
                                     <InputField name="lastName" value={formData.lastName} onChange={handleChange} PlaceHolder="Last name" />
                                 </div>
-                                <div className="mb-3 flex flex-col space-y-3">
+                                <div className=" flex flex-col space-y-5">
                                     <InputField name="email" value={formData.email} onChange={handleChange} PlaceHolder="Email" error={emailError} />
                                     <InputField name="message" value={formData.message} onChange={handleChange} PlaceHolder="Message" type="textarea" isTextArea={true} />
                                 </div>
-                                <button type="submit" className="w-full h-[48px] rounded-full mt-5 text-center text-[#1E1E1E] bg-[#10E0D7] font-bold" disabled={isLoading}>
+                                <button type="submit" className="w-full h-[48px] rounded-full mt-5 text-center text-[#1E1E1E] bg-[#10E0D7] font-bold default-hover:bg-[#7fccc8] transition-all duration-700" disabled={isLoading}>
                                     {isLoading ? 'Submitting...' : 'Submit'}
                                 </button>
                             </form>
@@ -134,6 +134,25 @@ function Collaboration() {
                     </div>
 
                 </div>
+                <div className='h-[844px] font-roboto flex items-center justify-center space-x-8 bg-[#050C0C] max-md:flex-col max-md:h-auto'>
+                <div className='w-[632px] h-[684px] max-[1300px]:w-[45vw] relative flex flex-col space-y-3 items-center justify-center rounded-2xl border border-[#86868B33] bg-linear-to-b from-[#FFFFFF0D] to-[#FFFFFF00] max-md:w-[91.47%] max-md:mx-auto max-md:h-fit max-md:py-6 max-md:mt-24'>
+                    <p className="font-bold text-white text-[35px] w-[552px] max-lg:max-w-[100%] max-lg:scale-95 text-left leading-[35px] tracking-[2%] max-md:text-[27px] max-md:leading-[32px] max-md:tracking-[2%] mb-3 uppercase max-[1300px]:scale-75">
+                        <span className='text-[#10E0D7] '> Discover </span>  seamless <br /> airport navigation <span className='text-[#10E0D7]'> today </span>
+                    </p>
+                    <p className={`font-normal w-[552px] max-lg:max-w-[100%] max-lg:scale-95 text-left opacity-90 mb-7 text-[#f0f0f0] text-[18px] leading-[26px] tracking-[0] max-[1300px]:scale-75 max-md:text-[16px] max-md:leading-[24px] max-md:tracking-[0]`}>
+                        Ready to enhance your travel experience? Download the G8WAY app now and explore effortless airport navigation, real-time flight updates, and personalized recommendations. Your journey just got smarter.
+                    </p>
+                    <div className='w-[552px] mt-7 max-[1300px]:scale-75 max-lg:max-w-[100%] max-lg:scale-95'>
+                        <DownloadTheApp className={"max-sm:!w-[91.47vw] max-sm:!h-[56px] max-md:!font-roboto max-md:!font-medium"}/>
+                    </div>
+                    <div className='absolute bottom-5 right-8 max-[1300px]:scale-75 max-md:hidden max-lg:bottom-1 max-lg:right-1'>
+                        <img src="QrcodeG8.svg" alt="" />
+                    </div>
+                </div>
+                <div className='w-[632px] h-[684px] max-md:h-fit max-[1300px]:w-[45vw] rounded-2xl border border-[#86868B33] bg-linear-to-b from-[#FFFFFF0D] to-[#FFFFFF00] max-md:w-[91.47vw] max-md:overflow-hidden max-md:my-6'>
+                    <img className='ml-16 max-md:ml-5 mt-5 max-[1300px]:scale-75 max-md:scale-100' src="g8mobileinhand.png" alt="" />
+                </div>
+            </div>
             </div>
         </>
     );

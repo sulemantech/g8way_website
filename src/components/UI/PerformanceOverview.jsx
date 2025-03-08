@@ -4,7 +4,7 @@ import Squares from './Squares';
 
 function PerformanceOverview() {
   return (
-    <div className='flex flex-col overflow-hidden items-center relative justify-center h-[874px] max-lg:h-auto max-md:min-h-fit'>
+    <div className='flex flex-col overflow-hidden items-center relative  justify-center h-[874px] max-lg:h-auto max-md:min-h-fit'>
       {/* <div className='absolute top-0 bg-amber-500 border border-amber-500 z-50'>
       <Squares
         squareSize={90}
@@ -13,10 +13,10 @@ function PerformanceOverview() {
         opacity={"opacity-100"}
       />
       </div> */}
-      <div className='absolute w-[833px] h-[126px] max-md:hidden -top-8 left-0'>
+      <div className='absolute  max-md:hidden -top-8 left-0'>
         <img src="BarsBgRight.png" alt="" />
       </div>
-      <div className='absolute w-[833px] h-[126px] max-md:hidden -top-8 right-0'>
+      <div className='absolute  max-md:hidden -top-8 right-0'>
         <img src="BarsBgleft.png" alt="" />
       </div>
       <p className='font-roboto text-white font-bold text-[35px] leading-[35px] tracking-[2%] max-md:text-[28px] max-md:leading-[32px] text-center uppercase'><span className='text-[#10E0D7]'> G8WAY </span> Performance <span className='text-[#10E0D7]'> Overview </span>  </p>
