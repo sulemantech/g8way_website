@@ -12,7 +12,7 @@ export default function PrivacyPolicy() {
 
             {/* Title Section */}
             <div className="w-full relative bg-[#10E0D7] flex items-center justify-center text-center p-6">
-                <h1 className="text-3xl md:text-5xl font-bold uppercase">
+                <h1 className="text-3xl md:text-5xl font-bold">
                     Privacy Policy
                 </h1>
             </div>
@@ -43,14 +43,14 @@ export default function PrivacyPolicy() {
 
                     {/* General Information */}
                     <TitleSection
-                        title="1. General Information on Data Processing"
+                        title="1. general information on data processing"
                         description="When using this website, personal data is processed by GIGA FIBER Development GmbH. “Personal data” within the meaning of the GDPR includes all information relating to an identified or identifiable person. The IP address can also be personal data. An IP address is assigned to every device connected to the internet by the internet provider so that it can send and receive data.
 We process personal data in compliance with the relevant data protection regulations, in particular the GDPR and the BDSG. Data processing by us only takes place on the basis of legal permission. We process personal data only with your consent (Art. 6 para. 1 lit. a GDPR), for the performance of a contract to which you are a party or at your request for the implementation of pre-contractual measures (Art. 6 para. 1 lit. b GDPR), for compliance with a legal obligation (Art. 6 para. 1 lit. c GDPR) or if the processing is necessary to safeguard our legitimate interests or the legitimate interests of a third party, unless your interests or fundamental rights and freedoms, which require the protection of personal data, prevail (Art. 6 para. 1 lit. f GDPR).
 "
                     />
 
                     <TitleSection
-                        title="1.1 External Hosting"
+                        title="1.1 EXTERNAL HOSTING"
                         description="This website is hosted by an external service provider (hoster). The personal data collected on this website is stored on the hoster’s servers. This may include IP addresses, contact requests, meta and communication data, contract data, contact details, names, website accesses and other data generated via a website.
                         The hoster is used for the purpose of fulfilling the contract with our potential and existing customers (Art. 6 para. 1 lit. b GDPR) and in the interest of a secure, fast and efficient provision of our online offer by a professional provider (Art. 6 para. 1 lit. f GDPR).
                         Our hoster will only process your data to the extent necessary to fulfill its performance obligations and follow our instructions with regard to this data.
@@ -59,19 +59,19 @@ We process personal data in compliance with the relevant data protection regulat
                     />
 
                     <TitleSection
-                        title="1.2 Duration of Storage"
+                        title="1.2 DURATION OF STORAGE"
                         description="Unless otherwise stated in the following information, we only store the data for as long as is necessary to achieve the purpose of processing or to fulfill our contractual or legal obligations. Such statutory retention obligations may arise in particular from commercial or tax law regulations. In this case, we will only process your data for the time stipulated by law and for the purposes pursued.
 "
                     />
 
                     <TitleSection
-                        title="1.3 Technical Service Providers"
+                        title="1.3 TECHNICAL SERVICE PROVIDERS"
                         description="Unless otherwise stated in the following information, the data is processed on our own servers and, if applicable, servers of technical service providers in the European Union that have been commissioned by us for this purpose. Hosting is currently carried out on servers of Amazon AWS Europe in Frankfurt am Main. With regard to our website, the data is only processed in accordance with explicit instructions and under contractual obligation to ensure adequate technical and organizational measures for data protection
 "
                     />
 
                     <TitleSection
-                        title="1.4. Processing of Server Log Files"
+                        title="1.4 PROCESSING OF SERVER LOG FILES"
                         description="<p>
                             The provider of the pages automatically collects and stores information in so-called server log files, which your browser automatically transmits to us. These are:
                             </p>
@@ -99,13 +99,13 @@ We process personal data in compliance with the relevant data protection regulat
                     />
 
                     <TitleSection
-                        title="2 Contact Form"
+                        title="2. Contact form"
                         description="Our website contains a contact form that you can use to send us messages, inquiries or questions about specific products. The transfer of your data is encrypted. To complete the contact form, we also ask you for personal data such as your first name, surname and e-mail address. All data fields marked as mandatory are required to process your request. If you do not provide this data, we will not be able to process your request. The provision of further data is voluntary. Alternatively, you can send us an e-mail message using the addresses provided. We need the personal data entered in connection with the contact form in order to process your request. The legal basis for data processing is therefore Art. 6 para. 1 lit. b GDPR if your request relates to an existing contractual relationship or pre-contractual measures, otherwise Art. 6 para. 1 lit. f GDPR, as we have a legitimate interest in processing your request.
 "
                     />
 
                     <TitleSection
-                        title="3 Cookies"
+                        title="3. Cookies"
                         description="We use cookies on our website. Cookies are small text files that are stored by your browser when you visit a website. This identifies the browser used and can be recognized by our web server. Our website contains necessary and non-necessary cookies. Necessary cookies are required for our website to function.
                         Insofar as the use of necessary cookies results in the processing of personal data, this is based on the legal basis of Art. 6 para. 1 lit. f GDPR. This processing serves our legitimate interest in making our website more user-friendly, effective and secure.
                         With your consent, we use analysis cookies for analysis and advertising purposes. The legal basis for this is your consent in accordance with Art. 6 para. 1 lit. a GDPR, if you have given it. Your consent can be revoked at any time for the future.
@@ -114,7 +114,7 @@ We process personal data in compliance with the relevant data protection regulat
                     />
 
                     <TitleSection
-                        title="4. Integrated Third-Party Services and Content"
+                        title="4. integrated third-party services and content"
                         description="We use services and content provided by third-party providers on our website. For such integration, it is technically necessary to process your IP address so that the content can be sent to your browser. Your IP address is therefore transmitted to the respective third-party provider. The details of the data processing and the respective legal basis can be found in the further explanations in this section.
                         Specifically, we use the following third-party services and content:"
                     />
@@ -233,33 +233,29 @@ We process personal data in compliance with the relevant data protection regulat
 `} />
                     <TitleSectionDec
                         title="4.7 GOOGLE REMARKETING"
-                        description={`<p>
-    GIGA FIBER Development GmbH uses the online advertising program “Google Ads” on its website and in this context conversion tracking (visit action evaluation).  
-    Google Conversion Tracking is an analysis service of Google Ireland Limited, Gordon House, 4 Barrow St, Dublin, D04 E5W5, Ireland.
-</p>
-<p>
-    Further information and Google’s privacy policy can be found at:  
-    <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.
+                        description={`<p><p>GIGA FIBER Development GmbH uses the online advertising program <u>“Google Ads”</u> on its website and in this context conversion tracking (visit action evaluation). Google Conversion Tracking is an analysis service of <u>Google Ireland Limited</u>, Gordon House, 4 Barrow St, Dublin, D04 E5W5, Ireland. When you click on an advertisement placed by Google, a cookie for conversion tracking is stored on your computer. These cookies have a limited validity, do not contain any personal data and are therefore not used for personal identification. If you visit our website and the cookie has not yet expired, Google and we can recognize that you have clicked on the ad and that you have been redirected to this website. Each Google Ads customer receives a different cookie. It is therefore not possible for cookies to be tracked via the websites of Ads customers. The information obtained with the help of the conversion cookie is used to create conversion statistics. This tells us the total number of users who clicked on one of our ads and were redirected to a page with a conversion tracking tag. However, we do not receive any information with which users can be personally identified. Further information and Google’s privacy policy can be found at: <a href="https://policies.google.com/privacy" target="_blank"><u>https://policies.google.com/privacy</u></a>.</p>
+
+<p>This website uses the <u>Google Remarketing</u> service. Google Remarketing is an online advertising program of <u>Google Ireland Limited</u>, Gordon House, Barrow Street, Dublin 4, Ireland (“Google”). We use the remarketing function within the Google Ads service. With the remarketing function, we can present you with advertisements based on your interests on other websites/apps within the Google advertising network. For this purpose, your surfing behavior on our website is analyzed, e.g. which offers you have viewed (tracking data). This allows us to show you personalized advertising on the online search engine Google itself, so-called <u>“Google ads”</u> and on other websites/apps even after you have visited our website. For this purpose, Google stores a cookie in your browser when you visit Google services or websites in the Google advertising network. This cookie is used to record your visits. The cookie is used to uniquely identify your web browser and not to identify you personally. Such further processing of the data as well as the processing of the data after its transmission by GlobalConnect to Google is carried out by <u>Google Ireland Limited</u> as the sole controller under data protection law. In this context, <u>Google Ireland Limited</u>, as the sole controller under data protection law, may store data about you in the USA. The <u>European Court of Justice</u> has determined that the USA is a country with an inadequate level of data protection. In this context, there is a particular risk that your data will be processed by American institutions/authorities for control and monitoring purposes without you having sufficient legal recourse against this.</p>
+
+<p>You can find more information about Google Remarketing and Google’s privacy policy here: <a href="https://policies.google.com/privacy?hl=de&gl=de" target="_blank"><u>https://policies.google.com/privacy?hl=de&gl=de</u></a>. Here you can also assert your rights as a data subject (e.g. right to erasure) with regard to the data that Google processes as the controller under data protection law. You can revoke your consent to the use of Google remarketing here.</p>
+
 </p>`} />
                     <TitleSectionDec
                         title="4.8 SOCIAL-MEDIA-PAGES"
-                        description={`<p>
-    We maintain publicly accessible profiles on social networks. Your visit to these profiles triggers a variety of data processing operations.  
-    Below we provide you with an overview of which of your personal data is collected, used and stored by us when you visit our profiles on social networks.
-</p>
+                        description={`<p>We maintain publicly accessible profiles on social networks. Your visit to these profiles triggers a variety of data processing operations. Below we provide you with an overview of which of your personal data is collected, used, and stored by us when you visit our profiles on social networks. <u>Personal data</u> is information that can be assigned to you as a specific person (e.g. name, age, address, photos, email addresses, possibly also IP addresses). You are not obliged to provide us with your personal data. However, this may be necessary for individual functionalities of our profiles in social networks. These functions will not be available to you, or only to a limited extent, if you do not provide us with your personal data.</p>
 
-<h4>4.9 FACEBOOK AND INSTAGRAM</h4>
-<p>
-    Our Facebook and Instagram pages (hereinafter collectively referred to as “Facebook”) can be accessed via the Meta platform,  
-    which is operated in the European Union by Meta Platforms Ireland Ltd, 4 Grand Canal Square, Grand Canal Harbor, Dublin 2, Ireland (“Meta”).
-</p>
-<p>
-    Independent processing of usage data by Meta: When you visit our Facebook page, Meta collects usage data.  
-    In principle, Meta is solely responsible for this data processing under data protection law.  
-    Meta provides information on this in its data policy at  
-    <a href="https://www.facebook.com/privacy/policy/?entry_point=data_policy_redirect&entry=0" target="_blank">Facebook Privacy Policy</a> and in its cookie policy at  
-    <a href="https://www.facebook.com/privacy/policies/cookies/?entry_point=cookie_policy_redirect&entry=0" target="_blank">Facebook Cookie Policy</a>.
-</p>`} />
+<p>When you visit our profiles, your <u>personal data</u> is not only collected, processed, and used by us, but also by the operators of the respective social network. This happens even if you yourself do not have a profile on the respective social network. We have no influence on and no precise knowledge of how the operators process the data from your visit to our fan page and from your interactions with our posts for their own purposes, how long it is stored, and whether the data is passed on to third parties. Data processing may differ depending on whether you are registered and logged in to the social network or whether you visit the page as a non-registered and/or non-logged-in user.</p>
+
+<p>When you access the fan page or a post, the <u>IP address</u> assigned to your end device is transmitted to the operator of the respective social network. If you are currently logged into the social network, a cookie on your end device can be used to track how you have moved around the Internet. Buttons integrated into websites enable the operators of the respective social network to record your visits to these websites and assign them to your respective profile. This data can be used to tailor content or advertising to you. If you want to avoid this, you should log out or deactivate the <u>“stay logged in”</u> function, delete the cookies on your device, and restart your browser.</p>
+
+<p>Details on the collection and storage of your personal data as well as the type, scope, and purpose of its use by the operator of the respective social network can be found in the <u>data protection declarations</u> of the respective operator and the following declarations.</p>
+
+<p>The purpose of data processing by us on our social media presences is to inform our customers or other interested persons about our <u>offers, products, services, campaigns, factual topics, and company news</u>, to interact with visitors to our social media presences on these topics, and to respond to corresponding queries, praise, or criticism.</p>
+
+<p>The processing of your personal data when you visit our social media presences is based on our <u>legitimate interests</u> in effectively informing users and communicating with users in accordance with <u>Art. 6 para. 1 lit. f) GDPR</u>. No overriding conflicting interests on your part are apparent if you use the social networks voluntarily and with knowledge of the respective terms of use and data protection notices, especially as we always provide the content via alternative communication channels, such as our website, wherever possible. If you are registered with the social networks yourself, the processing pursuant to <u>Art. 6 para. 1 lit. b) GDPR</u> is also carried out in accordance with the terms of use agreed between you and the social network.</p>
+
+<p>We only reserve the right to delete content if this is necessary. We may share your content on our site if this is a function of the social network and communicate with you via the platform.</p>
+`} />
                     <TitleSectionDec
                         title="4.9 FACEBOOK UND INSTAGRAM"
                         description={`<p>
@@ -374,14 +370,14 @@ Processing of your data when communicating via Facebook: If you contact us via t
                         description={`<p>As a person affected by data processing, you have the following rights – in each case under the legal requirements and to the extent permitted by law. You have the right to:</p>
 
 <ul>
-    <li>• obtain information about the processing of your personal data (<a href="https://gdpr-info.eu/art-15-gdpr/" style="text-decoration: underline;">Art. 15 GDPR</a>)</li>
-    <li>• obtain without undue delay the rectification of inaccurate personal data concerning you and/or the completion of incomplete personal data (<a href="https://gdpr-info.eu/art-16-gdpr/" style="text-decoration: underline;">Art. 16 GDPR</a>)</li>
-    <li>• obtain the erasure of personal data concerning you without undue delay (<a href="https://gdpr-info.eu/art-17-gdpr/" style="text-decoration: underline;">Art. 17 GDPR</a>)</li>
-    <li>• request the restriction of data processing concerning you (<a href="https://gdpr-info.eu/art-18-gdpr/" style="text-decoration: underline;">Art. 18 GDPR</a>)</li>
-    <li>• receive the personal data concerning you, which you have provided, in a structured, machine-readable format and to transmit those data to another controller (<a href="https://gdpr-info.eu/art-20-gdpr/" style="text-decoration: underline;">Art. 20 GDPR</a>)</li>
-    <li>• object, on grounds relating to your particular situation, to the processing of personal data concerning you, provided that the processing is based on a legitimate interest; if your data is used for direct marketing purposes, you have the right to object at any time (<a href="https://gdpr-info.eu/art-21-gdpr/" style="text-decoration: underline;">Art. 21 GDPR</a>)</li>
-    <li>• withdraw your consent to data processing at any time without affecting the lawfulness of data processing based on consent before its withdrawal (<a href="https://gdpr-info.eu/art-7-gdpr/" style="text-decoration: underline;">Art. 7 (3) GDPR</a>)</li>
-    <li>• complain to a supervisory authority about the processing of your data (<a href="https://gdpr-info.eu/art-77-gdpr/" style="text-decoration: underline;">Art. 77 GDPR</a>).</li>
+    <li>• to obtain information about the processing of your personal data (<a href="https://gdpr-info.eu/art-15-gdpr/" style="text-decoration: underline;">Art. 15 GDPR</a>)</li>
+    <li>• to obtain without undue delay the rectification of inaccurate personal data concerning you and/or the completion of incomplete personal data (<a href="https://gdpr-info.eu/art-16-gdpr/" style="text-decoration: underline;">Art. 16 GDPR</a>)</li>
+    <li>• to obtain the erasure of personal data concerning you without undue delay (<a href="https://gdpr-info.eu/art-17-gdpr/" style="text-decoration: underline;">Art. 17 GDPR</a>)</li>
+    <li>• to request the restriction of data processing concerning you (<a href="https://gdpr-info.eu/art-18-gdpr/" style="text-decoration: underline;">Art. 18 GDPR</a>)</li>
+    <li>• to receive the personal data concerning you, which you have provided, in a structured, machine-readable format and to transmit those data to another controller (<a href="https://gdpr-info.eu/art-20-gdpr/" style="text-decoration: underline;">Art. 20 GDPR</a>)</li>
+    <li>• to object, on grounds relating to your particular situation, to the processing of personal data concerning you, provided that the processing is based on a legitimate interest; if your data is used for direct marketing purposes, you have the right to object at any time (<a href="https://gdpr-info.eu/art-21-gdpr/" style="text-decoration: underline;">Art. 21 GDPR</a>)</li>
+    <li>• to withdraw your consent to data processing at any time without affecting the lawfulness of data processing based on consent before its withdrawal (<a href="https://gdpr-info.eu/art-7-gdpr/" style="text-decoration: underline;">Art. 7 (3) GDPR</a>)</li>
+    <li>• to complain to a supervisory authority about the processing of your data (<a href="https://gdpr-info.eu/art-77-gdpr/" style="text-decoration: underline;">Art. 77 GDPR</a>).</li>
 </ul>
 
 `} />
@@ -396,11 +392,10 @@ Processing of your data when communicating via Facebook: If you contact us via t
                         title="8. right to lodge a complaint with a supervisory authority
 "
                         description={`If you believe that the processing of personal data concerning you violates the provisions of the GDPR, you have the right to lodge a complaint with a supervisory authority in accordance with Art. 77 GDPR.
- 
-Last updated: March 2025
 `} />
 
                 </div>
+                <p>Last updated: March 2025</p>
             </div>
 
             <Footer />

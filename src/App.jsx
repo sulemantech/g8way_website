@@ -8,6 +8,8 @@ import Features from "./components/Features";
 import About from "./components/About";
 import Collaboration from "./components/Collaboration";
 import Footer from "./components/Footer";
+import Header from "./components/UI/Header";
+import Squares from "./components/UI/Squares";
 
 function App() {
   const homeRef = useRef(null);
@@ -21,9 +23,32 @@ function App() {
 
   return (
     <div className="max-w-[1920px] mx-auto">
-      <div ref={homeRef}>
-        <Home scrollToSection={scrollToSection} refs={{ home: homeRef, features: featuresRef, about: aboutRef, contact: contactRef }} />
+      <div ref={homeRef} className="relative">
+        {/* Background Squares - Ensure it's behind everything */}
+        <Squares
+          squareSize={90}
+          borderColor="#0c1f1f"
+          bgColor="#071010"
+          opacity="opacity-30"
+          className="absolute inset-0 -z-20" // Lower z-index to stay behind everything
+        />
+          <img className='absolute top-0' src="StarBg.png" alt="" />
+
+
+        {/* Sticky Header */}
+        <div className="w-full max-md:sticky top-0 left-0 z-50 bg-transparent">
+          <Header
+            scrollToSection={scrollToSection}
+            refs={{ home: homeRef, features: featuresRef, about: aboutRef, contact: contactRef }}
+          />
+        </div>
+
+        {/* Home Content */}
+        <div className="relative z-10">
+          <Home scrollToSection={scrollToSection} ref={homeRef} />
+        </div>
       </div>
+
       <OurMission />
       <TrustedComp />
       <LottieAnimationComponent />

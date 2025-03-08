@@ -98,6 +98,13 @@
     0px -16px 26.5px rgba(72, 212, 206, 0.25); /* Adjust opacity */
 }
 
+.response-shadow {
+  box-shadow: 
+    0px 0px 0px 0px #FFFFFF80 inset, 
+    0px -2px 40px 0px #10E0D726, 
+    0px -2px 10px 0px #E8FFFE4D;
+
+}
 /* *{
   border: red 1px solid;
 } */

@@ -35,27 +35,9 @@ function Home({ scrollToSection, refs }) {
 
     return (
         <div ref={homeRef} className="relative overflow-hidden font-roboto min-h-[960px] max-md:min-h-[1015px]">
-            {/* Background Squares with lower z-index */}
-            <Squares
-                squareSize={90}
-                borderColor="#0c1f1f"
-                bgColor='#071010'
-                opacity={"opacity-30"}
-                className="absolute inset-0 -z-10"
-            />
-
-            {/* Placeholder to maintain layout when header is fixed */}
-            <div className={`w-full ${isSticky ? ' w-full h-[110px] ' : 'h-0'}`}>
-            </div>
-
-            <div className={`w-full top-0 left-0 z-50 transition-all duration-300 ${showHeader ? 'fixed' : 'hidden'}`}>
-                <Header scrollToSection={scrollToSection} refs={refs} />
-            </div>
-
 
             <TextAnimation />
 
-            <img className='absolute top-0' src="StarBg.png" alt="" />
             <div className='absolute lg:right-[132px] max-lg:right-2 max-lg:scale-75 max-lg:top-56 lg:top-[136px] w-[413px] h-[332px] z-40 max-md:top-[50%] max-md:hidden'>
                 <span className='flex space-x-[80px] justify-end max-sm:justify-around'>
                     <Boximg HEIGHT="82px" WIDTH="82px" SRC="Shops.svg" Image="Shops" />
