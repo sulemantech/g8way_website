@@ -11,7 +11,7 @@ export default function LegalInformation() {
             </div>
             {/* Title Section */}
             <div className="w-full relative bg-[#10E0D7] flex items-center justify-center text-center p-6 md:min-h-[320px]">
-                <h1 className="text-3xl md:text-5xl font-bold ">IMPRINT</h1>
+                <h1 className="text-3xl md:text-5xl font-bold uppercase ">IMPRINT</h1>
             </div>
 
             {/* Content Sections */}
@@ -19,7 +19,7 @@ export default function LegalInformation() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {/* Register Court */}
                     <div>
-                        <h2 className="text-xl font-semibold mb-2  text-[#10E0D7]">Register Court</h2>
+                        <h2 className="text-xl font-semibold mb-2 uppercase text-[#10E0D7]">Register Court</h2>
                         <p>GIGA FIBER Development GmbH</p>
                         <p>Untermainkai 27-28</p>
                         <p>D-60329 Frankfurt am Main</p>
@@ -38,7 +38,7 @@ export default function LegalInformation() {
 
                     {/* Copyright */}
                     <div>
-                        <h2 className="text-xl font-semibold mb-2  text-[#10E0D7]">Copyright</h2>
+                        <h2 className="text-xl font-semibold mb-2 uppercase text-[#10E0D7]">Copyright</h2>
                         <p>
                             The texts and illustrations contained in the website are protected
                             by copyright.
@@ -52,7 +52,7 @@ export default function LegalInformation() {
 
                     {/* Disclaimer */}
                     <div>
-                        <h2 className="text-xl font-semibold mb-2  text-[#10E0D7]">Disclaimer</h2>
+                        <h2 className="text-xl font-semibold mb-2 uppercase text-[#10E0D7]">Disclaimer</h2>
                         <p>
                             Despite careful control of the content, we assume no liability for
                             the content of external links.

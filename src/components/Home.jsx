@@ -79,7 +79,7 @@ function Home({ scrollToSection, refs }) {
                 </div>
 
             </div>
-            <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 sm:hidden">
+            <div className="absolute bottom-14 left-1/2 transform -translate-x-1/2 sm:hidden">
                 <DownloadTheApp width="91.47vw" className={"max-md:!h-[56px]"} />
             </div>
 

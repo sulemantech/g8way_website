@@ -12,7 +12,7 @@ export default function PrivacyPolicy() {
 
             {/* Title Section */}
             <div className="w-full relative bg-[#10E0D7] flex items-center justify-center text-center p-6">
-                <h1 className="text-3xl md:text-5xl font-bold">
+                <h1 className="text-3xl uppercase md:text-5xl font-bold">
                     Privacy Policy
                 </h1>
             </div>
@@ -406,7 +406,7 @@ Processing of your data when communicating via Facebook: If you contact us via t
 const TitleSection = ({ title, description }) => {
     return (
         <section className="my-6">
-            <h2 className=" text-xl font-roboto font-semibold mb-2  text-[#10E0D7]">{title}</h2>
+            <h2 className=" text-xl font-roboto font-semibold mb-2 uppercase text-[#10E0D7]">{title}</h2>
             <div
                 className="text-white font-roboto"
                 dangerouslySetInnerHTML={{ __html: description }}
@@ -417,7 +417,7 @@ const TitleSection = ({ title, description }) => {
 const TitleSectionDec = ({ title, description }) => {
     return (
         <section className="my-6">
-            <h2 className="text-lg font-roboto font-medium  text-[#10E0D7] mb-2">{title}</h2>
+            <h2 className="text-lg font-roboto font-medium uppercase text-[#10E0D7] mb-2">{title}</h2>
             <div
                 className="text-white font-roboto"
                 dangerouslySetInnerHTML={{ __html: description }}
