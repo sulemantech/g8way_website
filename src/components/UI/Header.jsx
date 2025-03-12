@@ -26,7 +26,7 @@ function Header({ scrollToSection, refs }) {
   }, [isOpen]);
 
   return (
-    <div className={`relative w-full h-[110px] ${isOpen && "min-h-screen bg-black"} z-50`}>
+    <div className={`relative w-full h-[110px] ${isOpen && "min-h-screen bg-black"} z-[99999]`}>
       <div className="flex items-center justify-between p-4 text-white">
         {/* Logo */}
         <div className="flex items-center mt-7 ml-[107px] max-lg:ml-[4%]">

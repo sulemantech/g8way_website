@@ -22,21 +22,24 @@ function App() {
   };
 
   return (
-    <div className="max-w-[1920px] mx-auto">
-      <div ref={homeRef} className="relative">
+    <div className="max-w-[1920px] mx-auto ">
+      <div ref={homeRef} className="relative bg-[#071010]">
         {/* Background Squares - Ensure it's behind everything */}
-        <Squares
+        {/* <Squares
           squareSize={90}
           borderColor="#0c1f1f"
           bgColor="#071010"
           opacity="opacity-30"
           className="absolute inset-0 -z-20" // Lower z-index to stay behind everything
-        />
-          <img className='absolute top-0' src="StarBg.png" alt="" />
+        /> */}
+        {/* <img src="barsbghome.png" alt="" /> */}
+          <img className='absolute top-0 z-50 ' src="barsbghome.png" alt="" />
+          <img className='absolute top-0 z-[9999] ' src="StarBg.png" alt="" />
+          <img className='absolute top-0 z-0 border right-0' src="Star36.png" alt="" />
 
 
         {/* Sticky Header */}
-        <div className="w-full max-md:sticky top-0 left-0 z-50 bg-transparent">
+        <div className="w-full max-md:sticky top-0 left-0 z-[99999] bg-transparent">
           <Header
             scrollToSection={scrollToSection}
             refs={{ home: homeRef, features: featuresRef, about: aboutRef, contact: contactRef }}
@@ -44,7 +47,7 @@ function App() {
         </div>
 
         {/* Home Content */}
-        <div className="relative z-10">
+        <div className="relative ">
           <Home scrollToSection={scrollToSection} ref={homeRef} />
         </div>
       </div>

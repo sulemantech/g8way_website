@@ -2,8 +2,8 @@
 @import "tailwindcss";
 @custom-variant default-hover (&:hover);
 :root {
-  /* background: linear-gradient(to right, #040909, #040909); */
-  background: linear-gradient(to right, #fff, #fff);
+  background: linear-gradient(to right, #040909, #040909);
+  /* background: linear-gradient(to right, #fff, #fff); */
 }
 
 
@@ -77,6 +77,10 @@
 .download-text {
   transition: transform 0.6s;
 }
+.download-button:hover {
+  background-color: #7ae1dc;
+
+}
 
 /* On hover, move the icon to the right and text to the left */
 .download-button:hover .download-icon {
@@ -85,7 +89,7 @@
 
 .download-button:hover .download-text {
   transform: translateX(-20px);
-}
+  }
 
 .my-shadow {
   box-shadow: inset 0px 0px 0px 0px #ffffff80, 0px -2px 40px 0px #10e0d726,
@@ -119,5 +123,5 @@ input:-webkit-autofill:active {
 
 
 /* *{
-  border: red 1px solid;
+  border: 1px solid red;
 } */

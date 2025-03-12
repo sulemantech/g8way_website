@@ -117,7 +117,7 @@ function Collaboration() {
                     <p className={`font-bold text-white text-[46px] leading-[46px]   max-md:text-[32px] max-md:leading-[34px] tracking-[2%] mb-3 uppercase text-center ${responseStatus != null ? "max-md:text-center" : "max-md:text-left"}`}>
                         Interested in <span className='text-[#10E0D7]'>collaborating</span> <br /> or <span className='text-[#10E0D7]'>learning more</span>?
                     </p>
-                    <p className={`font-normal opacity-90 mb-7 max-md:w-[91.47vw] max-md:mx-auto text-[#f0f0f0] text-[18px] leading-[26px]  max-md:text-[16px] max-md:leading-[24px] tracking-[0] text-center w-[843px] max-lg:max-w-[100vw] ${responseStatus != null ? "max-md:text-center" : "max-md:text-left"}`}>
+                    <p className={`font-normal opacity-90 mb-7 max-md:w-[91.47vw] max-md:mx-auto text-[#f0f0f0] text-[18px] leading-[26px]  max-md:text-[16px] max-md:leading-[24px] tracking-[0] text-center  ${responseStatus != null ? "max-md:text-center" : "max-md:text-left"}`}>
                         Reach out to us through our user-friendly contact form. Our team looks forward to working <span className='max-md:hidden'><br /> </span> with you and creating innovative solutions.
                     </p>
                     <div className="w-[632px] max-md:max-w-[91.47vw] mx-auto">
@@ -170,7 +170,7 @@ function Collaboration() {
                             <img src="QrcodeG8.svg" alt="" />
                         </div>
                     </div>
-                    <div className='w-[632px] h-[684px] max-md:h-fit max-[1300px]:w-[45vw] rounded-2xl border border-[#86868B33] bg-linear-to-b from-[#FFFFFF0D] to-[#FFFFFF00] max-md:w-[91.47vw] max-md:overflow-hidden max-md:my-6'>
+                    <div className='w-[632px] overflow-hidden h-[684px] max-md:h-fit max-[1300px]:w-[45vw] rounded-2xl border border-[#86868B33] bg-linear-to-b from-[#FFFFFF0D] to-[#FFFFFF00] max-md:w-[91.47vw] max-md:overflow-hidden max-md:my-6'>
                         <img className='ml-16 max-md:ml-5 mt-5 max-[1300px]:scale-75 max-md:scale-100' src="g8mobileinhand.png" alt="" />
                     </div>
                 </div>
@@ -196,7 +196,7 @@ function InputField({ PlaceHolder, name, value, onChange, error, isTextArea }) {
                         placeholder=" "
                         className={`peer w-full h-[100px] bg-transparent placeholder:text-[#fff] 
                             border ${error ? "border-[#F44336]" : "border-[#FFFFFF1A]"} 
-                            text-[#fff] rounded-md px-3 py-2 transition duration-300 ease 
+                            text-[#fff] rounded-md px-3 py-4 transition duration-300 ease 
                             focus:outline-none focus:border-[#FFFFFF1A] hover:border-[#FFFFFF1A] shadow-sm focus:shadow resize-none`}
                     />
                 ) : (

@@ -8,7 +8,7 @@ function TravelInovation() {
             Want to be part of <br /> the <span className='text-[#10E0D7]'> travel innovation</span>?
             </p>
 
-            <p className={`font-normal text-[#F0F0F0] max-md:w-[91.47vw] max-md:mx-auto text-[18px] leading-[26px]  max-md:text-[16px] max-md:leading-[24px] max-md:text-left tracking-[0] text-center w-[843px] max-lg:max-w-[100vw]`}>
+            <p className={`font-normal text-[#F0F0F0] max-md:w-[91.47vw] max-md:mx-auto text-[18px] leading-[26px]  max-md:text-[16px] max-md:leading-[24px] max-md:text-left tracking-[0] text-center `}>
             G8WAY offers unique collaboration opportunities for travel industry partners. <br />Whether you’re an airport, airline, or retailer, we create synergies that benefit everyone involved.
             </p>
             </div>
