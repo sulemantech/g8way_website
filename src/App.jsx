@@ -30,7 +30,7 @@ function App() {
       }
     }
   };
-  
+
 
   return (
     <div className="max-w-[1920px] mx-auto ">
@@ -44,9 +44,16 @@ function App() {
           className="absolute inset-0 -z-20" // Lower z-index to stay behind everything
         /> */}
         {/* <img src="barsbghome.png" alt="" /> */}
-          <img className='absolute top-0 z-50 ' src="barsbghome.png" alt="" />
-          <img className='absolute top-0 z-[9999] ' src="StarBg.png" alt="" />
-          <img className='absolute top-0 z-0 border right-0' src="Star36.png" alt="" />
+        <img className='absolute top-0 max-md:hidden bottom-0 z-50 max-md:w-screen max-md:h-screen object-cover' src="barsbghome.png" alt="" />
+        <img className='absolute top-0 z-[9999] max-md:hidden ' src="StarBg.png" alt="" />
+        <img className='absolute top-0 z-0 right-0 max-md:hidden' src="Star36.png" alt="" />
+        <div className="absolute -top-5 z-0 md:hidden">
+          <img
+            className="z-0 object-contain"
+            src="backgroundMobile.png"
+            alt=""
+          />
+        </div>
 
 
         {/* Sticky Header */}
@@ -63,14 +70,16 @@ function App() {
         </div>
       </div>
 
-      <OurMission />
+      <OurMission scrollToSection={scrollToSection}
+        refs={{ home: homeRef, features: featuresRef, about: aboutRef, contact: contactRef }} />
       <TrustedComp />
       <LottieAnimationComponent />
       <div className="bg-[#050C0C]" ref={featuresRef}>
         <Features />
       </div>
       <div ref={aboutRef}>
-        <About />
+        <About  scrollToSection={scrollToSection}
+            refs={{ home: homeRef, features: featuresRef, about: aboutRef, contact: contactRef }}/>
       </div>
       <div ref={contactRef}>
         <Collaboration />

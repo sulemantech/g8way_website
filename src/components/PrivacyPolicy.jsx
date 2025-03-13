@@ -24,7 +24,7 @@ export default function PrivacyPolicy() {
             <div className="container mx-auto p-6 mt-6 w-[90%] max-md:w-[95%]">
                 <div className="space-y-6">
                     {/* Table of Contents */}
-                    <h4 className="">Table of Contents</h4>
+                    <h4 className=" text-2xl font-roboto font-bold mb-2 uppercase text-[#10E0D7]">Table of Contents</h4>
                     <p>
                         The use of this website <a className="underline text-[#10E0D7]" href="https://g8way-app.com/">g8way-app.com</a> may involve the processing of
                         personal data. In order to make this processing comprehensible for
