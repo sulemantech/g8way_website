@@ -121,6 +121,15 @@ input:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s;
 }
 
+/* index.css or App.css */
+html, body {
+  background-color: #000;  /* Black background */
+  color: #fff;  /* White text for better contrast */
+  overflow-x: hidden;  /* Prevents horizontal scrolling */
+  overscroll-behavior: none;  /* Stops bounce effect on mobile */
+  touch-action: pan-y;  /* Allows only vertical scrolling */
+  height: 100%;  /* Ensure full-page background */
+}
 
 /* *{
   border: 1px solid red;
