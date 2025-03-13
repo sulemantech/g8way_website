@@ -13,7 +13,7 @@ export default function PrivacyPolicy() {
             </div>
 
             {/* Title Section */}
-            <div className="w-full relative bg-[#10E0D7] flex items-center justify-center text-center p-6  md:min-h-[250px]">
+            <div className="w-full relative bg-[#10E0D7] flex items-center justify-center text-center p-6  md:min-h-[350px]">
                 <h1 className="text-3xl uppercase md:text-5xl font-bold">
                     Privacy Policy
                 </h1>

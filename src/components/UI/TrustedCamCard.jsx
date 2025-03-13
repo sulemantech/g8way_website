@@ -11,7 +11,7 @@ export default function TrustedCompCard({ NumberText, Image, Text }) {
       <div className="flex flex-col items-center justify-center space-y-2  
         max-md:flex-row-reverse max-md:justify-between max-md:space-y-0 max-md:gap-4">
         <div className="min-w-[34px] min-h-[34px]  max-w-[34px] max-h-[34px]  md:min-w-[53px] md:min-h-[53px] md:max-w-[53px] md:max-h-[53px] flex justify-center items-center">
-          <img className="" src={Image} alt="" />
+          <img className="min-h-[28px] min-w-[28px]" src={Image} alt="" />
         </div>
 
         <p className="text-[#86868b] font-inter text-[16px] text-center font-normal w-[187.2px] min-h-[70.55px] flex flex-col justify-end  
