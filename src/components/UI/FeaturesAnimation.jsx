@@ -120,11 +120,11 @@ const TextComponent = ({ text }) => {
         <>
             <div className='min-h-fit md:w-[28.54vw] max-w-[411px] flex flex-col overflow-hidden  border border-[#86868B33] rounded-2xl p-5 bg-linear-to-b from-[#FFFFFF0D] to-[#FFFFFF00]'>
                 <div className=' font-roboto  flex flex-col overflow-hidden'>
-                    <img className='w-[40px] aspect-square mb-[4vh]' src={text[0]} alt="Icon" />
-                    <p className='font-bold text-[24px] leading-[32px] text-[#FFFFFF] tracking-[2%] uppercase mb-2'>{text[1]}</p>
-                    <p className='font-normal text-[18px] leading-[26px] tracking-[0%] text-[#F0F0F0] opacity-90'>{text[2]}</p>
+                    <img className='w-[40px] aspect-square mb-[4vh] max-lg:mb-5' src={text[0]} alt="Icon" />
+                    <p className='font-bold text-[24px] leading-[32px] text-[#FFFFFF] tracking-[2%] max-lg:text-xl uppercase mb-2'>{text[1]}</p>
+                    <p className='font-normal text-[18px] leading-[26px] tracking-[0%] max-lg:text-sm text-[#F0F0F0] opacity-90'>{text[2]}</p>
                 </div>
-                <p className='font-normal text-[16px] text-[#F0F0F0] leading-[24px] tracking-[0%] uppercase mt-[10vh] '>
+                <p className='font-normal text-[16px] text-[#F0F0F0] leading-[24px] tracking-[0%] uppercase mt-[10vh] max-lg:mt-12'>
                     {text[3]}
                 </p>
             </div>

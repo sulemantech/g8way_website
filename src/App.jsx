@@ -19,15 +19,7 @@ function App() {
 
   const scrollToSection = (ref) => {
     if (ref.current) {
-      if (window.innerWidth >= 768) {
-        // For md (768px) and larger screens
         ref.current.scrollIntoView({ behavior: "smooth" });
-      } else {
-        // For screens smaller than md (768px)
-        const yOffset = -940;
-        const y = ref.current.getBoundingClientRect().top + window.scrollY + yOffset;
-        window.scrollTo({ top: y, behavior: "smooth" });
-      }
     }
   };
 

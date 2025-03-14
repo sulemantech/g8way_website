@@ -16,7 +16,7 @@ export default function LegalInformation() {
 
                 {/* Title Section */}
                 <div className="relative w-full bg-[#10E0D7] flex items-center justify-center text-center py-10 md:py-16 md:min-h-[239.09px]">
-                    <h1 className="text-3xl md:text-5xl font-bold uppercase -mt-16">Legal Information</h1>
+                    <h1 className="text-3xl md:text-5xl font-bold uppercase -mt-16 max-md:mt-0">Legal Information</h1>
                     <img className="absolute -bottom-0.5 w-full hidden md:block" src="curve.png" alt="" />
                 </div>
 

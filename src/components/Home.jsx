@@ -12,27 +12,6 @@ function Home({ scrollToSection, refs }) {
     const [showHeader, setShowHeader] = useState(true);
 
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                // Get how much of Home section is visible
-                const visiblePercentage = entry.intersectionRatio * 100;
-                setShowHeader(visiblePercentage > 10); // Show header if at least 20% is visible
-            },
-            { root: null, threshold: [0.1, 0.8] } // Detect when 20% or 80% is visible
-        );
-
-        if (homeRef.current) {
-            observer.observe(homeRef.current);
-        }
-
-        return () => {
-            if (homeRef.current) {
-                observer.unobserve(homeRef.current);
-            }
-        };
-    }, []);
-
     return (
         <div ref={homeRef} className="relative overflow-hidden  font-roboto min-h-[850px] max-md:min-h-[892px]">
 
