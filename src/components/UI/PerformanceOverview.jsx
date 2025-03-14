@@ -13,14 +13,14 @@ function PerformanceOverview() {
         opacity={"opacity-100"}
       />
       </div> */}
-      <div className='absolute  max-md:hidden -top-8 left-0'>
-        <img src="BarsBgRight.png" alt="" />
-      </div>
-      <div className='absolute  max-md:hidden -top-8 right-0'>
-        <img src="BarsBgleft.png" alt="" />
-      </div>
       <p className='font-roboto text-white font-bold text-[35px] leading-[35px] tracking-[2%] max-md:text-[28px] max-md:leading-[32px] text-center uppercase'><span className='text-[#10E0D7]'> G8WAY </span> Performance <span className='text-[#10E0D7]'> Overview </span>  </p>
       <div className='flex flex-col justify-between w-[870px] max-lg:max-w-[90vw] h-[658px] max-lg:h-auto'>
+      <div className='absolute  max-md:hidden -top-12 left-0'>
+        <img src="BarsBgRight.png" alt="" />
+      </div>
+      <div className='absolute  max-md:hidden -top-12 right-0'>
+        <img src="BarsBgleft.png" alt="" />
+      </div>
         <StatsCard
           widthClass="w-[870px]"
           heightClass="h-[303px]"
