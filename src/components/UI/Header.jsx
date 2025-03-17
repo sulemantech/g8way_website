@@ -77,7 +77,7 @@ function Header({ scrollToSection, refs }) {
             }}
           >
             {navItems.map((item) => (
-              <div
+              <button
                 key={item.id}
                 onClick={() => {
                   setActive(item.id);
@@ -99,7 +99,7 @@ function Header({ scrollToSection, refs }) {
                 >
                   {item.label}
                 </span>
-              </div>
+              </button>
             ))}
           </div>
         </div>
