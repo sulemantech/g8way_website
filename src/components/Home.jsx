@@ -44,7 +44,7 @@ function Home({ scrollToSection, refs }) {
             </div>
             <div className="absolute bottom-0 max-md:hidden left-[140px] max-lg:bottom-32 z-0">
                 <img
-                    className="z-0 min-w-[700px] min-h-[283px] max-h-[825px]  object-cover"
+                    className="z-0 min-w-[700px] min-h-[283px] -ml-16 max-h-[825px]  object-cover"
                     src="mobilehomescreen.png"
                     alt=""
                 />

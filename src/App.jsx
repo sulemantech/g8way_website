@@ -60,7 +60,7 @@ function App() {
 
 
         {/* Sticky Header */}
-        <div className="w-full max-md:sticky top-0 left-0 z-[99999] bg-transparent">
+        <div className="w-full max-md:sticky top-0 left-0  bg-transparent">
           <Header
             scrollToSection={scrollToSection}
             refs={{ home: homeRef, features: featuresRef, about: aboutRef, contact: contactRef }}
