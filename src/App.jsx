@@ -24,6 +24,17 @@ function App() {
   };
 
 
+  const scrollToAbout = (ref = aboutRef) => {
+    if (ref.current) {
+        ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const scrollToContact = (ref = contactRef) => {
+    if (ref.current) {
+        ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="max-w-[1920px] mx-auto ">
       <div ref={homeRef} className="relative bg-[#071010]">
@@ -63,15 +74,14 @@ function App() {
       </div>
 
       <OurMission scrollToSection={scrollToSection}
-        refs={{ home: homeRef, features: featuresRef, about: aboutRef, contact: contactRef }} />
+        scrollToAbout={scrollToAbout} />
       <TrustedComp />
       <LottieAnimationComponent />
       <div className="bg-[#050C0C]" ref={featuresRef}>
         <Features />
       </div>
       <div ref={aboutRef}>
-        <About  scrollToSection={scrollToSection}
-            refs={{ home: homeRef, features: featuresRef, about: aboutRef, contact: contactRef }}/>
+        <About  scrollToContact={scrollToContact}/>
       </div>
       <div ref={contactRef}>
         <Collaboration />

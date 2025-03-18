@@ -171,7 +171,7 @@ function Collaboration() {
                         </div>
                     </div>
                     <div className='w-[632px] overflow-hidden h-[684px] max-md:h-fit max-[1300px]:w-[45vw] rounded-2xl border border-[#86868B33] bg-linear-to-b from-[#FFFFFF0D] to-[#FFFFFF00] max-md:w-[91.47vw] max-md:overflow-hidden max-md:my-6'>
-                        <img className='ml-16 max-md:ml-5 mt-5 max-[1300px]:scale-75 max-md:scale-100' src="g8mobileinhand.png" alt="" />
+                        <img className='ml-16 max-md:ml-5 mt-5 max-[1300px]:scale-75 max-md:scale-100 min-[1301px]:w-[474px]  min-[1301px]:h-[662px]' src="g8mobileinhand.png" alt="" />
                     </div>
                 </div>
             </div>

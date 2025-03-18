@@ -1,6 +1,6 @@
 import React from 'react'
 
-function TravelInovation({scrollToSection , refs}) {
+function TravelInovation({scrollToContact}) {
     return (
         <div className='min-h-[875px] max-md:min-h-fit max-md:py-16 font-roboto flex flex-col space-y-8 mt-8 justify-center max-md:w-[91.47vw] max-md:mx-auto items-center max-md:mt-10'>
             <div className='flex flex-col space-y-3 items-center max-md:w-[91.47vw] max-md:mx-auto'>
@@ -12,9 +12,9 @@ function TravelInovation({scrollToSection , refs}) {
             G8WAY offers unique collaboration opportunities for travel industry partners. <br />Whether you’re an airport, airline, or retailer, we create synergies that benefit everyone involved.
             </p>
             </div>
-            <button onClick={()=> scrollToSection(refs.contact)} className='w-[241px] h-[48px] cursor-pointer max-md:min-w-[91.47vw] flex justify-center items-center rounded-full border border-[#10E0D7] font-medium text-[#10E0D7] default-hover:bg-[#10E0D7] transition-all duration-700 default-hover:text-[#050C0C]  text-[16px] leading-[18.75px] tracking-[0] text-center'>Join our partner network</button>
-            <div>
-                <img src="G8wayBottomLogo.png" alt="" />
+            <button onClick={() => scrollToContact()} className='w-[241px] h-[48px] cursor-pointer max-md:min-w-[91.47vw] flex justify-center items-center rounded-full border border-[#10E0D7] font-medium text-[#10E0D7] default-hover:bg-[#10E0D7] transition-all duration-700 default-hover:text-[#050C0C]  text-[16px] leading-[18.75px] tracking-[0] text-center'>Join our partner network</button>
+            <div className='bg-black -mb-3'>
+                <img src="G8wayBottomLogo.svg" alt="" />
             </div>
 
         </div>

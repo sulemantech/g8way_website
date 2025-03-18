@@ -3,7 +3,7 @@ import PerformanceOverview from './UI/PerformanceOverview';
 import TravelInovation from './UI/TravelInovation';
 import Dropdown from './UI/DropDown';
 
-function About({ scrollToSection,refs}) {
+function About({ scrollToContact}) {
     return (
         <div className='bg-[#050C0C] py-12 max-md:py-6 max-lg:px-5 max-md:px-0'>
             <div className='w-[1296px] h-[514px]  mx-auto flex flex-col justify-between py-[80px] max-md:py-0 mb-14 max-[1300px]:h-auto max-[1300px]:w-full'>
@@ -62,8 +62,8 @@ function About({ scrollToSection,refs}) {
                 <img className='w-[616px] h-[459px] max-md:mt-6 rounded-[20px] max-xl:scale-90 max-lg:scale-100 object-contain max-md:min-w-[91.47vw] max-md:h-[240px]' src="aboutMuseum.png" alt="" />
             </div>
             <div className=''><PerformanceOverview /></div>
-            <div><TravelInovation  scrollToSection={scrollToSection}
-            refs={refs} /></div>
+            <div><TravelInovation  scrollToContact={scrollToContact}
+            /></div>
         </div>
     )
 }
