@@ -13,8 +13,8 @@ function TravelInovation({scrollToContact}) {
             </p>
             </div>
             <button onClick={() => scrollToContact()} className='w-[241px] h-[48px] cursor-pointer max-md:min-w-[91.47vw] flex justify-center items-center rounded-full border border-[#10E0D7] font-medium text-[#10E0D7] default-hover:bg-[#10E0D7] transition-all duration-700 default-hover:text-[#050C0C]  text-[16px] leading-[18.75px] tracking-[0] text-center'>Join our partner network</button>
-            <div className='bg-black -mb-3'>
-                <img src="G8wayBottomLogo.svg" alt="" />
+            <div className=' border-none outline-none'>
+                <img className='object-cover scale-[1.1]' src="G8wayBottomLogo.svg" alt="" />
             </div>
 
         </div>
